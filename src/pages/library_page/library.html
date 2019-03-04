@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar class="tools">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>
+          <img src="assets/imges/wootubes-logo.png">
+        </ion-col>
+        <ion-col col-1 offset-4>
+          <ion-icon class="video" name="videocam"></ion-icon>
+        </ion-col>
+        <ion-col col-1>
+          <ion-icon class="search" name="search"></ion-icon>
+        </ion-col>
+        <ion-col col-2 (click)="account()">
+          <img src="assets/imges/account.png">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-slides class="image-slider" loop="true" slidesPerView="2">
+    <ion-slide>
+      <video controls="controls" preload="metadata" autoplay="autoplay" webkit-playsinline="webkit-playsinline" class="videoPlayer">
+        <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4" />
+      </video>
+    </ion-slide>
+    <ion-slide>
+      <video controls="controls" preload="metadata" autoplay="autoplay" webkit-playsinline="webkit-playsinline" class="videoPlayer">
+        <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4" />
+      </video>
+    </ion-slide>
+    <ion-slide>
+      <video controls="controls" preload="metadata" autoplay="autoplay" webkit-playsinline="webkit-playsinline" class="videoPlayer">
+        <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4" />
+      </video>
+    </ion-slide>
+    <ion-slide>
+      <video controls="controls" preload="metadata" autoplay="autoplay" webkit-playsinline="webkit-playsinline" class="videoPlayer">
+        <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4" />
+      </video>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-row class="section">
+    <ion-icon name="md-cloud-done"></ion-icon>
+    <h2>History</h2>
+  </ion-row>
+
+  <ion-row class="section">
+    <ion-icon name="md-cloud-done"></ion-icon>
+    <h2>Download</h2>
+  </ion-row>
+
+  <ion-row class="section">
+    <ion-icon name="md-cloud-done"></ion-icon>
+    <h2>My Videos</h2>
+  </ion-row>
+
+  <ion-row class="section">
+    <ion-icon name="md-cloud-done"></ion-icon>
+    <h2>Watched Video</h2>
+  </ion-row>
+</ion-content>
