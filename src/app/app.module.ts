@@ -15,12 +15,14 @@ import { SubscriptionPage } from '../pages/Subscription_page/subscription';
 import { AccountPage } from '../pages/Account/account';
 import { SkipaddPage } from '../pages/Skip_add_page/skipadd';
 import { SettingPage } from '../pages/setting/setting';
+import { CreatePage } from '../pages/Create_Chanel_page/create';
 
 @NgModule({
   declarations: [
     AccountPage,
     MyApp,
     BlogPage,
+    CreatePage,
     HomePage,
     LibraryPage,
     TabsPage,
@@ -38,6 +40,7 @@ import { SettingPage } from '../pages/setting/setting';
     AccountPage,
     MyApp,
     BlogPage,
+    CreatePage,
     HomePage,
     LibraryPage,
     TabsPage,
