@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, App, ViewController, MenuController } from 'ionic-angular';
 import { SettingPage } from '../setting/setting';
 import { TabsPage } from '../tabs/tabs';
+import { CreatePage } from '../Create_Chanel_page/create';
 
 @Component({
   selector: 'page-account',
@@ -38,7 +39,7 @@ export class AccountPage {
   viewWillUnload() {
     console.log('ionViewDidLoad AccountPage');
   }
-  
+
   dismiss() {
     this.viewCtrl.dismiss();
     this.appCtrl.getRootNav().setRoot(TabsPage);
@@ -46,5 +47,8 @@ export class AccountPage {
 
   setting() {
     this.appCtrl.getRootNavs()[0].push(SettingPage);
+  }
+  myChannel() {
+    this.appCtrl.getRootNavs()[0].push(CreatePage);
   }
 }

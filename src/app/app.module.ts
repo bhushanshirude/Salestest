@@ -2,8 +2,8 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-
 import { TabsPage } from '../pages/tabs/tabs';
+import { SuperTabsModule } from 'ionic2-super-tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -16,6 +16,11 @@ import { AccountPage } from '../pages/Account/account';
 import { SkipaddPage } from '../pages/Skip_add_page/skipadd';
 import { SettingPage } from '../pages/setting/setting';
 import { CreatePage } from '../pages/Create_Chanel_page/create';
+import { ChannelaboutPage } from '../pages/Channel_about_page/channelabout';
+import { ChannelhomePage } from '../pages/Channel_home_page/channelhome';
+import { ChannelpaymethodPage } from '../pages/Channel_paymethod_page/channelpaymethod';
+import { ChannelplaylistPage } from '../pages/Channel_playlist_page/channelplaylist';
+import { ChannelvideosPage } from '../pages/Channel_videos_page/channelvideos';
 
 @NgModule({
   declarations: [
@@ -23,6 +28,11 @@ import { CreatePage } from '../pages/Create_Chanel_page/create';
     MyApp,
     BlogPage,
     CreatePage,
+    ChannelaboutPage,
+    ChannelhomePage,
+    ChannelpaymethodPage,
+    ChannelplaylistPage,
+    ChannelvideosPage,
     HomePage,
     LibraryPage,
     TabsPage,
@@ -33,7 +43,9 @@ import { CreatePage } from '../pages/Create_Chanel_page/create';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    SuperTabsModule.forRoot()
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,6 +53,11 @@ import { CreatePage } from '../pages/Create_Chanel_page/create';
     MyApp,
     BlogPage,
     CreatePage,
+    ChannelaboutPage,
+    ChannelhomePage,
+    ChannelpaymethodPage,
+    ChannelplaylistPage,
+    ChannelvideosPage,
     HomePage,
     LibraryPage,
     TabsPage,

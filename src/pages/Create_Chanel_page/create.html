@@ -12,8 +12,16 @@
 
 </ion-header>
 
-
-<ion-content padding>
+<ion-content>
+  <super-tabs style="height: 100%; color:white;">
+    <super-tab [root]="tab1Root" [title]="showTitles? 'Home' : ''" [icon]="showIcons? '' : ''"></super-tab>
+    <super-tab [root]="tab2Root" [title]="showTitles? 'videos' : ''" [icon]="showIcons? '' : ''"></super-tab>
+    <super-tab [root]="tab3Root" [title]="showTitles? 'playlist' : ''" [icon]="showIcons? '' : ''"></super-tab>
+    <super-tab [root]="tab4Root" [title]="showTitles? 'pay method' : ''" [icon]="showIcons? '' : ''"></super-tab>
+    <super-tab [root]="tab5Root" [title]="showTitles? 'About' : ''" [icon]="showIcons? '' : ''"></super-tab>
+  </super-tabs>
+</ion-content>
+<!-- <ion-content padding>
   <div padding>
     <ion-segment [(ngModel)]="pet">
       <ion-segment-button value="kittens">
@@ -47,4 +55,4 @@
     </ion-list>
   </div>
 
-</ion-content>
+</ion-content> -->
