@@ -1,0 +1,21 @@
+page-upload-image {
+    p {
+        margin: 10px 5px 0px 10px;
+        display: block;
+        padding: 0px;
+        font-size: 12px;
+    }
+    .back {
+        width: 90px;
+        float: left;
+        border-radius: 20px;
+    }
+    .next {
+        width: 90px;
+        float: right;
+        border-radius: 20px;
+    }
+    [col-4] .img {
+            
+        }
+}

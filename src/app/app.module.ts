@@ -21,10 +21,21 @@ import { ChannelhomePage } from '../pages/Channel_home_page/channelhome';
 import { ChannelpaymethodPage } from '../pages/Channel_paymethod_page/channelpaymethod';
 import { ChannelplaylistPage } from '../pages/Channel_playlist_page/channelplaylist';
 import { ChannelvideosPage } from '../pages/Channel_videos_page/channelvideos';
+import { AccountloginPage } from '../pages/Account_login_page/accountlogin';
+import { AccountverificationPage } from '../pages/Account_verification_page/accountverification';
+import { AccountregisterPage } from '../pages/Account_register_page/accountregister';
+import { UploadTabsPage } from '../pages/upload-tabs/upload-tabs';
+import { UploadVideosPage } from '../pages/upload-tabs/Upload_videos_page/upload-videos';
+import { UploadVideoTypePage } from '../pages/upload-tabs/Upload_video_type_page/upload-video-type';
+import { UploadVideoDetailsPage } from '../pages/upload-tabs/Upload_video_details_page/upload-video-details';
+import { UploadImagePage } from '../pages/upload-tabs/Upload_image_page/upload-image';
 
 @NgModule({
   declarations: [
     AccountPage,
+    AccountloginPage,
+    AccountverificationPage,
+    AccountregisterPage,
     MyApp,
     BlogPage,
     CreatePage,
@@ -39,7 +50,12 @@ import { ChannelvideosPage } from '../pages/Channel_videos_page/channelvideos';
     TrendingPage,
     SubscriptionPage,
     SkipaddPage,
-    SettingPage
+    SettingPage,
+    UploadTabsPage,
+    UploadVideosPage,
+    UploadVideoTypePage,
+    UploadVideoDetailsPage,
+    UploadImagePage,
   ],
   imports: [
     BrowserModule,
@@ -50,6 +66,9 @@ import { ChannelvideosPage } from '../pages/Channel_videos_page/channelvideos';
   bootstrap: [IonicApp],
   entryComponents: [
     AccountPage,
+    AccountloginPage,
+    AccountverificationPage,
+    AccountregisterPage,
     MyApp,
     BlogPage,
     CreatePage,
@@ -64,7 +83,12 @@ import { ChannelvideosPage } from '../pages/Channel_videos_page/channelvideos';
     TrendingPage,
     SubscriptionPage,
     SkipaddPage,
-    SettingPage
+    SettingPage,
+    UploadTabsPage,
+    UploadVideosPage,
+    UploadVideoTypePage,
+    UploadVideoDetailsPage,
+    UploadImagePage,
   ],
   providers: [
     StatusBar,

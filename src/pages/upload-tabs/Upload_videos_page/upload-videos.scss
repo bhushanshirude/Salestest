@@ -1,0 +1,35 @@
+page-upload-videos {
+    p {
+        margin: 15px auto 0px auto;
+        display: block;
+        padding: 0px;
+        text-align: center;
+    }
+    .back {
+        width: 90px;
+        float: left;
+        border-radius: 20px;
+    }
+    .next {
+        width: 90px;
+        float: right;
+        border-radius: 20px;
+    }
+
+    .backs{
+        margin: 0px auto;
+        padding: 10px;
+        text-transform: initial;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .change-box{
+        margin: 20px auto;
+        padding: 10px 10px;
+        width: 90%;
+        border: 1px solid #cacaca;
+        display: block;
+        text-align: left;
+    }
+}

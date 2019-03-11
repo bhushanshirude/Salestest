@@ -1,0 +1,37 @@
+page-upload-tabs {
+    super-tabs-toolbar > ion-toolbar.toolbar .tab-buttons-container .tab-buttons super-tab-button.title-only .title {
+        line-height: 40px;
+        color: #000;
+        font-size: 12px;
+    }
+
+
+    .item-md.item-input.item-input-has-focus .item-inner, .item-md.item-input.input-has-focus .item-inner{
+        border-bottom-color: #000;
+        box-shadow: inherit;
+        color: #000;
+      }
+
+      .item-input-has-focus .label-md[floating],.input-has-focus .label-md[floating] {
+          color:#000;
+         
+      }
+
+    .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+        left: 0;
+        bottom: -5px;
+        background-position: left 0 top -2px;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-image: url();
+        background-repeat: repeat-x;
+        content: "";
+    }
+
+    .button-md-primary {
+        color: #fff;
+        background-color: #df173e;
+       
+    }
+}

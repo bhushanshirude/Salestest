@@ -1,0 +1,55 @@
+<ion-content class="loginWrap">
+  <form #Rehister="ngForm" (ngSubmit)="register()">
+    <ion-row class="loginTop">
+      <ion-col class="logo">
+        <img src="assets/images/wootubes-logo.png" />
+      </ion-col>
+      <h1 class="title_login">Sign up</h1>
+    </ion-row>
+
+    <ion-row class="loginCnt">
+      <ion-list>
+        <ion-item>
+          <ion-label floating>
+            <img class="icon_email" src="assets/images/icon_fullname.png" /> Full Name
+          </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>
+            <img class="icon_email" src="assets/images/icon_phone.png" /> Phone No.
+          </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>
+            <img class="icon_email" src="assets/images/icon_mail.png" /> Email
+          </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>
+            <img class="icon_email" src="assets/images/icon_password.png" /> Password
+          </ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>
+            <img class="icon_email" src="assets/images/icon_password.png" /> Confirm password
+          </ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+
+    <ion-row class="loginBottom">
+      <button ion-button class="btn_login" type="submit">Register
+        <img class="icon_arrow" src="assets/images/icon_arrow_white.png" />
+      </button>
+      <div class="newuser" (click)="singin()">
+        Already have an
+        <a href="#.">account?</a>
+      </div>
+    </ion-row>
+  </form>
+</ion-content>

@@ -3,6 +3,8 @@ import { NavController, NavParams, App, ViewController, MenuController } from 'i
 import { SettingPage } from '../setting/setting';
 import { TabsPage } from '../tabs/tabs';
 import { CreatePage } from '../Create_Chanel_page/create';
+import { SkipaddPage } from '../Skip_add_page/skipadd';
+import { UploadTabsPage } from '../upload-tabs/upload-tabs';
 
 @Component({
   selector: 'page-account',
@@ -51,4 +53,13 @@ export class AccountPage {
   myChannel() {
     this.appCtrl.getRootNavs()[0].push(CreatePage);
   }
+
+  skip() {
+    this.appCtrl.getRootNavs()[0].push(SkipaddPage);
+  }
+
+  skips() {
+    this.appCtrl.getRootNavs()[0].push(UploadTabsPage);
+  }
+
 }

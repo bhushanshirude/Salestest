@@ -1,0 +1,46 @@
+<ion-content class="loginWrap">
+  <form #loginfrom="ngForm" (ngSubmit)="login()">
+    <ion-row class="loginTop">
+      <ion-col class="logo">
+        <img src="assets/images/wootubes-logo.png" />
+      </ion-col>
+      <h1 class="title_login">Login</h1>
+    </ion-row>
+    <ion-row class="loginCnt">
+      <ion-list>
+        <ion-item>
+          <ion-label floating>
+            <img class="icon_email" src="assets/images/icon_mail.png" /> Email
+          </ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>
+            <img class="icon_email" src="assets/images/icon_password.png" /> Password
+          </ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        <ion-item class="item item-checkbox checkbox-assertive checkbox_login">
+          <label class="checkbox">
+            <input type="checkbox"> Remember me
+          </label>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+
+    <ion-row class="loginBottom">
+      <button ion-button class="btn_login" type="submit"> Login <img class="icon_arrow"
+          src="assets/images/icon_arrow_white.png" /></button>
+      <a (click)="forgot()" class="txt_forget">Forget your password?</a>
+
+      <div class="social_icon">
+        <a href="#."> <img src="assets/images/icon_fb.png" /> </a>
+        <a href="#."> <img src="assets/images/icon_twitter.png" /> </a>
+        <a href="#."> <img src="assets/images/icon_in.png" /> </a>
+      </div>
+      <div class="newuser" (click)="sign_Up()">
+        New user? <a>Signup here.</a>
+      </div>
+    </ion-row>
+  </form>
+</ion-content>
