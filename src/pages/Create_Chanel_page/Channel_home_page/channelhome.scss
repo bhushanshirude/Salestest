@@ -5,7 +5,7 @@ page-channelhome {
 
     h5 {
         font-size: 12px;
-        margin: 10px 0px 0px 10px;
+        margin: 10px 0px 0px 0px;
     }
 
     h4 {
@@ -17,7 +17,7 @@ page-channelhome {
 
     p {
         display: block;
-        margin: 0px 0px 0px 10px;
+        margin: 0px 0px 0px 0px;
         font-size: 10px;
         color: #000;
     }
@@ -42,4 +42,9 @@ page-channelhome {
         border-radius: 20px;
         float: left;
      }
+
+     .main img {
+        width: 100%;
+        height: 80px;
+    }
 }

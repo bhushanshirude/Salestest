@@ -2,16 +2,16 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
-  selector: 'page-channelhome',
-  templateUrl: 'channelhome.html',
+  selector: 'page-createnew',
+  templateUrl: 'createnew.html',
 })
-export class ChannelhomePage {
+export class CreatenewPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ChannelhomePage');
+    console.log('ionViewDidLoad CreatenewPage');
   }
 
 }

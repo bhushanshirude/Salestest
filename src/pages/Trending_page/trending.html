@@ -20,85 +20,68 @@
 </ion-header>
 
 <ion-content>
-  <!-- class="trading_screen" -->
-  <!-- <ion-slides class="image-slider" loop="true" slidesPerView="3">
-    <ion-slide>
-      <div class="red_circle">
-        <div class="circleCnt">
-          <div class="circleRound">
-            <img src="assets/images/icon/music.png" />
-          </div>
-          <p>Music</p>
-        </div>
+  <ion-row class="red_circle">
+    <div class="circleCnt">
+      <div class="circleRound">
+        <img src="assets/images/icon/music.png" />
       </div>
-    </ion-slide>
-
-    <ion-slide>
-      <div class="red_circle">
-        <div class="circleCnt">
-          <div class="circleRound">
-            <img src="assets/images/icon/game.png" />
-          </div>
-          <p>Gaming</p>
-        </div>
-      </div>
-    </ion-slide>
-
-    <ion-slide>
-      <div class="red_circle">
-        <div class="circleCnt">
-          <div class="circleRound">
-            <img src="assets/images/icon/films.png" />
-          </div>
-          <p>Films</p>
-        </div>
-      </div>
-    </ion-slide>
-
-    <ion-slide>
-      <div class="red_circle">
-        <div class="circleCnt">
-          <div class="circleRound">
-            <img src="assets/images/icon/news.png" />
-          </div>
-          <p>News</p>
-        </div>
-      </div>
-    </ion-slide>
-  </ion-slides> -->
-  <!-- <div style="height:100%;">  -->
-    <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer">
-      <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4"
-        type="video/mp4" />
-    </video>
-    <div class="videocnt">
-      <span class="hp_1">Discribe about your channel in brief; what- ever you’ve to share.</span>
-      <p class="hp_2">#wootube #channel #newinmarket</p>
-      <p class="hp_3">4.6M views</p>
+      <p>Music</p>
     </div>
-  <!-- </div> -->
+    <div class="circleCnt">
+      <div class="circleRound">
+        <img src="assets/images/icon/game.png" />
+      </div>
+      <p>Gaming</p>
+    </div>
+    <div class="circleCnt">
+      <div class="circleRound">
+        <img src="assets/images/icon/films.png" />
+      </div>
+      <p>Films</p>
+    </div>
+    <div class="circleCnt">
+      <div class="circleRound">
+        <img src="assets/images/icon/news.png" />
+      </div>
+      <p>News</p>
+    </div>
+    <div class="circleCnt">
+      <div class="circleRound">
+        <img src="assets/images/icon/beauty.png" />
+      </div>
+      <p>Beauty</p>
+    </div>
+  </ion-row>
 
-  <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer">
-    <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4"
-      type="video/mp4" />
-  </video>
-  <div class="videocnt">
-    <span class="hp_1">Discribe about your channel in brief; what- ever you’ve to share.</span>
-    <p class="hp_2">#wootube #channel #newinmarket</p>
-    <p class="hp_3">4.6M views</p>
+  <div (click)="seen()" class="main">
+    <img src="assets/imges/pexels-photo-257360.png">
+    <ion-row>
+      <ion-col col-11>
+        <h6>Disney's Aladdin Offical Trailer-in Theaters May 24 </h6>
+        <div class="circleDiv"> Walt Disneys Studios 411 Views
+          <a class="circle"></a>
+          <h4> 4 Days ago</h4>
+        </div>
+      </ion-col>
+      <ion-col col-1>
+        <ion-icon ios="ios-more" md="md-more"></ion-icon>
+      </ion-col>
+    </ion-row>
   </div>
 
-
-  <!-- <div class="videoWrap">
-      <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer">
-        <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4"
-          type="video/mp4" />
-      </video>
-      <div class="videocnt">
-        <span class="hp_1">Discribe about your channel in brief; what- ever you’ve to share.</span>
-        <p class="hp_2">#wootube #channel #newinmarket</p>
-        <p class="hp_3">4.6M views</p>
-      </div>
-    </div>
-  </ion-row> -->
+  <div (click)="seen()" class="main">
+    <img src="assets/imges/pexels-photo-257360.png">
+    <ion-row>
+      <ion-col col-11>
+        <h6>Disney's Aladdin Offical Trailer-in Theaters May 24 </h6>
+        <div class="circleDiv"> Walt Disneys Studios 411 Views
+          <a class="circle"></a>
+          <h4> 4 Days ago</h4>
+        </div>
+      </ion-col>
+      <ion-col col-1>
+        <ion-icon ios="ios-more" md="md-more"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </div>
 </ion-content>

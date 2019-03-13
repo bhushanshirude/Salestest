@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, App } from 'ionic-angular';
 import { AccountPage } from '../Account/account';
+import { HistoryPage } from '../History_page/history';
+import { WatchLaterPage } from '../Watch_later_page/watch-later';
+import { VideoDetailsPage } from '../Video_details_page/video-details';
 
 @Component({
   selector: 'page-library',
@@ -17,6 +20,17 @@ export class LibraryPage {
 
   account() {
     this.appCtrl.getRootNavs()[0].push(AccountPage);
+  }
+
+  history() {
+    this.appCtrl.getRootNavs()[0].push(HistoryPage);
+  }
+
+  Watch() {
+    this.appCtrl.getRootNavs()[0].push(WatchLaterPage);
+  }
+  seen() {
+    this.appCtrl.getRootNavs()[0].push(VideoDetailsPage);
   }
 
 }

@@ -5,7 +5,7 @@
         <ion-col col-4>
           <img src="assets/imges/wootubes-logo.png">
         </ion-col>
-        <ion-col col-1 offset-4>
+        <ion-col col-1 offset-4 (click)="video()">
           <ion-icon class="video" name="videocam"></ion-icon>
         </ion-col>
         <ion-col col-1>
@@ -34,19 +34,43 @@
       <img src="assets/imges/pexels-photo-257360.png" class="thumb-img" imageViewer />
     </ion-slide>
   </ion-slides>
-  <!-- autoplay="autoplay" -->
-  <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer">
-    <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4"
-      type="video/mp4" />
-  </video>
 
+  <div (click)="seen()" class="main">
+    <img src="assets/imges/pexels-photo-257360.png">
+    <ion-row>
+      <ion-col col-11>
+        <h6>Disney's Aladdin Offical Trailer-in Theaters May 24 </h6>
+        <div class="circleDiv"> Walt Disneys Studios 411 Views
+          <a class="circle"></a>
+          <h4> 4 Days ago</h4>
+        </div>
+      </ion-col>
+      <ion-col col-1>
+        <ion-icon ios="ios-more" md="md-more"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </div>
 
-  <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline"
+  <div (click)="seen()" class="main">
+    <img src="assets/imges/pexels-photo-257360.png">
+    <ion-row>
+      <ion-col col-11>
+        <h6>Disney's Aladdin Offical Trailer-in Theaters May 24 </h6>
+        <div class="circleDiv"> Walt Disneys Studios 411 Views
+          <a class="circle"></a>
+          <h4> 4 Days ago</h4>
+        </div>
+      </ion-col>
+      <ion-col col-1>
+        <ion-icon ios="ios-more" md="md-more"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+  <!-- <video controls="controls" autoplay="autoplay" preload="metadata" webkit-playsinline="webkit-playsinline"
     poster="assets/imges/pexels-photo-257360.png">
     <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4"
       type="video/mp4" />
-  </video>
-
-
-
+  </video> -->
 </ion-content>

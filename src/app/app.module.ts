@@ -16,11 +16,6 @@ import { AccountPage } from '../pages/Account/account';
 import { SkipaddPage } from '../pages/Skip_add_page/skipadd';
 import { SettingPage } from '../pages/setting/setting';
 import { CreatePage } from '../pages/Create_Chanel_page/create';
-import { ChannelaboutPage } from '../pages/Channel_about_page/channelabout';
-import { ChannelhomePage } from '../pages/Channel_home_page/channelhome';
-import { ChannelpaymethodPage } from '../pages/Channel_paymethod_page/channelpaymethod';
-import { ChannelplaylistPage } from '../pages/Channel_playlist_page/channelplaylist';
-import { ChannelvideosPage } from '../pages/Channel_videos_page/channelvideos';
 import { AccountloginPage } from '../pages/Account_login_page/accountlogin';
 import { AccountverificationPage } from '../pages/Account_verification_page/accountverification';
 import { AccountregisterPage } from '../pages/Account_register_page/accountregister';
@@ -29,6 +24,17 @@ import { UploadVideosPage } from '../pages/upload-tabs/Upload_videos_page/upload
 import { UploadVideoTypePage } from '../pages/upload-tabs/Upload_video_type_page/upload-video-type';
 import { UploadVideoDetailsPage } from '../pages/upload-tabs/Upload_video_details_page/upload-video-details';
 import { UploadImagePage } from '../pages/upload-tabs/Upload_image_page/upload-image';
+import { HistoryPage } from '../pages/History_page/history';
+import { WatchLaterPage } from '../pages/Watch_later_page/watch-later';
+import { MychannelPage } from '../pages/My_channel_page/mychannel';
+import { ChannelaboutPage } from '../pages/Create_Chanel_page/Channel_about_page/channelabout';
+import { ChannelhomePage } from '../pages/Create_Chanel_page/Channel_home_page/channelhome';
+import { ChannelpaymethodPage } from '../pages/Create_Chanel_page/Channel_paymethod_page/channelpaymethod';
+import { ChannelplaylistPage } from '../pages/Create_Chanel_page/Channel_playlist_page/channelplaylist';
+import { ChannelvideosPage } from '../pages/Create_Chanel_page/Channel_videos_page/channelvideos';
+import { CreatenewPage } from '../pages/Create_New_channel_page/createnew';
+import { VideoDetailsPage } from '../pages/Video_details_page/video-details';
+
 
 @NgModule({
   declarations: [
@@ -44,8 +50,11 @@ import { UploadImagePage } from '../pages/upload-tabs/Upload_image_page/upload-i
     ChannelpaymethodPage,
     ChannelplaylistPage,
     ChannelvideosPage,
+    CreatenewPage,
     HomePage,
+    HistoryPage,
     LibraryPage,
+    MychannelPage,
     TabsPage,
     TrendingPage,
     SubscriptionPage,
@@ -56,6 +65,8 @@ import { UploadImagePage } from '../pages/upload-tabs/Upload_image_page/upload-i
     UploadVideoTypePage,
     UploadVideoDetailsPage,
     UploadImagePage,
+    VideoDetailsPage,
+    WatchLaterPage
   ],
   imports: [
     BrowserModule,
@@ -77,8 +88,11 @@ import { UploadImagePage } from '../pages/upload-tabs/Upload_image_page/upload-i
     ChannelpaymethodPage,
     ChannelplaylistPage,
     ChannelvideosPage,
+    CreatenewPage,
     HomePage,
+    HistoryPage,
     LibraryPage,
+    MychannelPage,
     TabsPage,
     TrendingPage,
     SubscriptionPage,
@@ -89,6 +103,8 @@ import { UploadImagePage } from '../pages/upload-tabs/Upload_image_page/upload-i
     UploadVideoTypePage,
     UploadVideoDetailsPage,
     UploadImagePage,
+    VideoDetailsPage,
+    WatchLaterPage
   ],
   providers: [
     StatusBar,

@@ -1,166 +1,105 @@
-page-trending {
-    // .toolbar-md {
-    //     padding: 5px;
-    //     height: 50px;
-    // }
-    // [col-4] img{
-    //     width: 100px;
-    //     margin: 13px 0px 10px 0px;
-    // }
-
-    // [col-2] img {
-    //     width: 30px;
-    //     height: 30px;
-    //     border-radius: 50%;
-    //     margin: 13px 0px 10px 15px;
-    //     border: 1px solid rgb(158, 155, 155);
-    // }
-
-    // .ion-md-videocam:before {
-    //     content: "\f39f";
-    //     margin: 22px 0px 10px 15px;
-    // }
-
-    // .ion-md-search:before {
-    //     content: "\f375";
-    //     margin: 22px 0px 10px 15px;
-    // }
-
-    // h2 {
-    //     font-size: 12px;
-    //     margin: 2px 0px 0px 10px;
-    // }
-    
-    // .section{
-    //     margin: 0px 0px 8px 0px;
-    //     padding: 3px;
-    // }
-
-    // .trading_screen{
-    //     margin: 0px;
-    //     padding: 0px;
-    //     width: 100%;
-    //     display: block;
-    //     position: relative;
-    // }
-    // .red_circle{
-    //     margin: 0px;
-    //     padding: 0px;
-    //     width: 100%;
-    //     display: block;
-    //     position: relative;
-    //     text-align: center;
-    // }
-    // .red_circle .circleCnt{
-    //     margin: 10px 0;
-    //     padding: 0px;
-    //     display: inline-block;
-    //     position: relative; 
-    //     width: 16%;
-    // }
-    // .red_circle .circleCnt .circleRound{
-    //     margin: 0px auto;
-    //     padding: 0px;
-    //     width: 50px;
-    //     height: 50px;
-    //     background: #df173e;
-    //     color: #fff;
-    //     border-radius: 50%;
-    //     display: block;
-    //     position: relative; 
-    // }
-    // .red_circle .circleCnt .circleRound img{ max-width: 60%; margin-top: 12px;}
-    // .red_circle .circleCnt p{
-    //     margin: 6px 0px 0px 0px;
-    //     padding: 0px;
-    //     color: #111111;
-    //     font-size: 16px;
-    //     text-align: center;
-    //     display: block;
-    //     width: 100%;
-    // }
-    
-    // .trading_video{
-    //     margin: 0px;
-    //     padding: 0px;
-    //     width: 100%;
-    //     display: block;
-    //     position: relative;  
-    // }
-    // .trading_video .videoWrap{
-    //     margin: 0px;
-    //     padding: 0px;
-    //     width: 100%;
-    //     display: block;
-    //     position: relative;  
-    // }
-    
-    // .trading_video .videoWrap .video{
-    //     margin: 0px 0px 10px 0px;
-    //     padding: 0px;
-    //     width: 100%;
-    //     height: 205px;
-    //     overflow: hidden;
-    //     display: block;
-    //     position: relative;  
-    // }
-    // .trading_video .videoWrap  .video .imgVideo{
-    //     margin: 0px;
-    //     padding: 0px;
-    //     max-width: 100%;
-    //     display: block;
-    //     position: relative;  
-    // }
-    // .trading_video .videoWrap .video .anchPlay{
-    //     margin: 0px auto;
-    //     padding: 0px;
-    //     display: block;
-    //     width: 70px;
-    //     height: 70px;
-    //     position: absolute;
-    //     top: 80px;
-    //     left: 0px;
-    //     right: 0px;
-    //     bottom: 0px;
-    //     text-align: center;
-    // }
-    
-    // .trading_video .videoWrap .video .anchPlay img{ max-width: 70%;}
-    // .trading_video .videoWrap .videocnt{
-    //     margin: 0px 0px 20px 0px;
-    //     padding: 0px 0px 10px 0px;
-    //     width: 100%;
-    //     display: block;
-    //     position: relative;  
-    //     border-bottom: 1px solid #eee;  
-    // }
-    .hp_1{
-        margin: 5px auto 2px auto;
-        padding: 0px; 
-        width: 90%;
-        display: block;
-        font-size: 12px;
-        color:#111111;
+page-trending {  
+  .toolbar-md {
+        padding: 5px;
+        height: 50px;
     }
-    .hp_2{
-        margin: 0px auto;
-        padding: 0px; 
-        width: 90%;
+    [col-4] img{
+        width: 100px;
+        margin: 13px 0px 10px 0px;
+    }
+
+    [col-2] img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin: 13px 0px 10px 15px;
+        border: 1px solid rgb(158, 155, 155);
+    }
+
+    .ion-md-videocam:before {
+        content: "\f39f";
+        margin: 22px 0px 10px 15px;
+    }
+
+    .ion-md-search:before {
+        content: "\f375";
+        margin: 22px 0px 10px 15px;
+    }
+
+    .main img {
+        width: 100%;
+        height: 200px;
+    }
+
+    h6 {
+        font-size: 13px;
+        margin: 5px 10px 0px 10px;
+    }
+
+    .circleDiv{
+        padding: 0px;
         display: block;
+        width: 100%;
         font-size: 11px;
-        color:#111111;
+        margin: -12px 0px 10px 10px;
+
     }
-    .hp_3{
-        margin: 0px 0px 10px 15px;
-        padding: 0px; 
-        width: 90%;
-        display: block;
-        font-size: 10px;
-        color:#111111;
+    .circleDiv h4 { 
+        font-size: 11px;
+        display: inline-block;
+     }
+
+    .circle {
+        margin: 0px 0px 0px 2px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50px;
+        background-color: rgb(121, 117, 117);
+        display: inline-block;
     }
 
-    audio, canvas, progress, video {
-        vertical-align: baseline;
-        height: 40%;
+    .ion-md-more:before {
+        content: "\f1c9";
+        margin: 6px 0px 0px 0px;
+    }
+
+    .red_circle{
+        margin: 0px auto;
+        padding: 0px;
+        width: 100%;
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    .red_circle .circleCnt{
+        margin: 10px 0;
+        padding: 0px;
+        display: inline-block;
+        position: relative; 
+        width: 18%;
+    }
+    .red_circle .circleCnt .circleRound{
+        margin: 0px auto;
+        padding: 0px;
+        width: 45px;
+        height: 45px;
+        background: #df173e;
+        color: #fff;
+        border-radius: 50%;
+        display: block;
+        position: relative; 
+    }
+    .red_circle .circleCnt .circleRound img { 
+        max-width: 50%; 
+        margin-top: 12px;
+    }
+    .red_circle .circleCnt p{
+        margin: 6px 0px 0px 0px;
+        padding: 0px;
+        color: #000;
+        font-size: 12px;
+        text-align: center;
+        display: block;
+        width: 100%;
     }
 }

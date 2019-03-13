@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { ChannelhomePage } from '../Channel_home_page/channelhome';
-import { ChannelvideosPage } from '../Channel_videos_page/channelvideos';
-import { ChannelpaymethodPage } from '../Channel_paymethod_page/channelpaymethod';
-import { ChannelplaylistPage } from '../Channel_playlist_page/channelplaylist';
-import { ChannelaboutPage } from '../Channel_about_page/channelabout';
+import { ChannelhomePage } from './Channel_home_page/channelhome';
+import { ChannelvideosPage } from './Channel_videos_page/channelvideos';
+import { ChannelplaylistPage } from './Channel_playlist_page/channelplaylist';
+import { ChannelpaymethodPage } from './Channel_paymethod_page/channelpaymethod';
+import { ChannelaboutPage } from './Channel_about_page/channelabout';
 
 @Component({
   selector: 'page-create',

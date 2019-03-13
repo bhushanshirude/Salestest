@@ -24,32 +24,25 @@
   <h6>Recents Video</h6>
   <ion-slides class="image-slider" loop="true" slidesPerView="2">
     <ion-slide>
-      <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer">
-        <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4"
-          type="video/mp4" />
-      </video>
+      <div (click)="seen()" class="main">
+        <img src="assets/imges/pexels-photo-257360.png">
+      </div>
     </ion-slide>
+
     <ion-slide>
-      <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer">
-        <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4"
-          type="video/mp4" />
-      </video>
+      <div (click)="seen()" class="main">
+        <img src="assets/imges/pexels-photo-257360.png">
+      </div>
     </ion-slide>
+
     <ion-slide>
-      <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer">
-        <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4"
-          type="video/mp4" />
-      </video>
-    </ion-slide>
-    <ion-slide>
-      <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer">
-        <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4"
-          type="video/mp4" />
-      </video>
+      <div (click)="seen()" class="main">
+        <img src="assets/imges/pexels-photo-257360.png">
+      </div>
     </ion-slide>
   </ion-slides>
 
-  <ion-row class="section">
+  <ion-row class="section" (click)="history()">
     <ion-icon name="md-cloud-done"></ion-icon>
     <h2>History</h2>
   </ion-row>
@@ -64,7 +57,7 @@
     <h2>My Videos</h2>
   </ion-row>
 
-  <ion-row class="section">
+  <ion-row class="section" (click)="Watch()">
     <ion-icon name="md-cloud-done"></ion-icon>
     <h2>Watched Video</h2>
   </ion-row>

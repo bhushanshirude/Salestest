@@ -5,6 +5,7 @@ import { TabsPage } from '../tabs/tabs';
 import { CreatePage } from '../Create_Chanel_page/create';
 import { SkipaddPage } from '../Skip_add_page/skipadd';
 import { UploadTabsPage } from '../upload-tabs/upload-tabs';
+import { MychannelPage } from '../My_channel_page/mychannel';
 
 @Component({
   selector: 'page-account',
@@ -50,8 +51,12 @@ export class AccountPage {
   setting() {
     this.appCtrl.getRootNavs()[0].push(SettingPage);
   }
-  myChannel() {
+  create() {
     this.appCtrl.getRootNavs()[0].push(CreatePage);
+  }
+
+  myChannel() {
+    this.appCtrl.getRootNavs()[0].push(MychannelPage);
   }
 
   skip() {
