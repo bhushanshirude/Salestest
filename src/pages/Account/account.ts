@@ -27,9 +27,6 @@ export class AccountPage {
     console.log('ionViewDidLoad AccountPage');
   }
 
-  viewDidLoad() {
-    console.log('ionViewDidLoad AccountPage');
-  }
 
   viewWillEnter() {
     console.log('ionViewDidLoad AccountPage');
