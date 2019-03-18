@@ -38,6 +38,8 @@ import { AddvideopopoverPage } from '../pages/Add_video_popover_page/addvideopop
 import { MychanelDeletePage } from '../pages/My_channel_delete_page/mychanel-delete';
 import { PlaylistPopupPage } from '../pages/Playlist_popup_page/playlist-popup';
 import { AccountforgotPage } from '../pages/Account_forgotpassword_page/accountforgot';
+import { MychannelEditPage } from '../pages/My_channel_edit_page/mychannel-edit';
+import { PopoverPage } from '../pages/popover_page/popover';
 
 
 @NgModule({
@@ -61,10 +63,12 @@ import { AccountforgotPage } from '../pages/Account_forgotpassword_page/accountf
     HistoryPage,
     LibraryPage,
     MychannelPage,
+    MychannelEditPage,
     MychanelDeletePage,
     PlaylistPopupPage,
     TabsPage,
     TrendingPage,
+    PopoverPage,
     SubscriptionPage,
     SkipaddPage,
     SettingPage,
@@ -103,10 +107,12 @@ import { AccountforgotPage } from '../pages/Account_forgotpassword_page/accountf
     HistoryPage,
     LibraryPage,
     MychannelPage,
+    MychannelEditPage,
     MychanelDeletePage,
     PlaylistPopupPage,
     TabsPage,
     TrendingPage,
+    PopoverPage,
     SubscriptionPage,
     SkipaddPage,
     SettingPage,

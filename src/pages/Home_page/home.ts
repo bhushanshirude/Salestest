@@ -1,8 +1,9 @@
-import { Component} from '@angular/core';
-import { NavController, App} from 'ionic-angular';
+import { Component } from '@angular/core';
+import { NavController, App, PopoverController } from 'ionic-angular';
 import { AccountPage } from '../Account/account';
 import { UploadTabsPage } from '../upload-tabs/upload-tabs';
 import { VideoDetailsPage } from '../Video_details_page/video-details';
+import { PopoverPage } from '../popover_page/popover';
 
 @Component({
   selector: 'page-home',
@@ -12,7 +13,8 @@ import { VideoDetailsPage } from '../Video_details_page/video-details';
 export class HomePage {
   // myNavbarColor: string;
   // public plt: Platform
-  constructor(public navCtrl: NavController, public appCtrl: App) {
+  display;
+  constructor(public navCtrl: NavController, public appCtrl: App, public popoverCtrl: PopoverController) {
     // if (this.plt.is('ios')) {
     //   // This will only print when on iOS
     //   console.log('I am an iOS device!');
@@ -39,5 +41,4 @@ export class HomePage {
   seen() {
     this.appCtrl.getRootNavs()[0].push(VideoDetailsPage);
   }
-
 }

@@ -17,10 +17,6 @@ page-accountlogin {
         width: 100%;
         display: block;
         position: relative;
-        // background-image: url('../assets/imges/login_background_top.png');
-        // background-position: right top;
-        // background-repeat: no-repeat;
-        // background-size: cover;  
     }
     .logo{
         margin: 0px;
@@ -85,11 +81,8 @@ page-accountlogin {
         display: block;
         height: 30%;
         position: relative;
-        // background-image: url('../assets/imges/login_background_bottom.png');
-        // background-position: right top;
-        // background-repeat: no-repeat;
-        // background-size: cover;  
     }
+
     .btn_login{
         margin: 30px auto  0px auto;
         padding: 0px;
@@ -105,7 +98,9 @@ page-accountlogin {
         font-family: 'Montserrat', sans-serif;
         text-transform: capitalize;
     }
-    .btn_login img{ max-width: 40%;}
+    .btn_login img { 
+        max-width: 40%;
+    }
     .txt_forget{
         margin: 10px 0px 0px 0px;
         padding: 0px;
@@ -132,7 +127,10 @@ page-accountlogin {
         text-decoration: none;
         color:#fff;
     }
-    .social_icon img{ width: 30px;  height: 30px;}
+    .social_icon img {
+         width: 30px;  
+         height: 30px;
+        }
     
     .newuser{
         margin: 20px 0px 20px 0px;
@@ -153,24 +151,16 @@ page-accountlogin {
 
     .list-md .item-block .item-inner {
         border-bottom: 1px solid #dedede;
-        //height: 80px;
     }
     
+    .inputEmail{
+        border: 1px solid #eceaea;
+        margin: 15px 0px;
+    }
 
-
-
-
-
-
-/*** **/
-.inputEmail{
-    border: 1px solid #eceaea;
-    margin: 15px 0px;
-}
-
-label.label-md{
-    margin: 0px;
-}
+    label.label-md{
+        margin: 0px;
+    }
 
 
 

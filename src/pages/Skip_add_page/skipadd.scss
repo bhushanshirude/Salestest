@@ -3,12 +3,6 @@ page-skipadd {
         margin: 0px 2px 0px 4px;
     }
     
-    // .button-md-primary {
-    //     color: #fff;
-    //     background-color: #e83338;
-    //     width: 90%;
-    //     margin: 160px 0px 0px 0px;
-    // }
     .swiper-pagination-bullet-active {
         background: #e83338;
         opacity: 1;
@@ -36,8 +30,8 @@ page-skipadd {
     }
 
     .logo img {
-        width:150px;
-        height: 30px;
+        max-width: 40%;
+        // height: 30px;
         margin: 10px auto;
         padding: 5px;
         text-align: center;

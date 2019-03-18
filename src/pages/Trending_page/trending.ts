@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, App } from 'ionic-angular';
 import { AccountPage } from '../Account/account';
 import { VideoDetailsPage } from '../Video_details_page/video-details';
+import { UploadTabsPage } from '../upload-tabs/upload-tabs';
 
 
 @Component({
@@ -20,9 +21,13 @@ export class TrendingPage {
   account() {
     this.appCtrl.getRootNavs()[0].push(AccountPage);
   }
-  
+
   seen() {
     this.appCtrl.getRootNavs()[0].push(VideoDetailsPage);
+  }
+
+  video() {
+    this.appCtrl.getRootNavs()[0].push(UploadTabsPage);
   }
 
 }

@@ -6,6 +6,7 @@ import { ChannelplaylistPage } from './Channel_playlist_page/channelplaylist';
 import { ChannelpaymethodPage } from './Channel_paymethod_page/channelpaymethod';
 import { ChannelaboutPage } from './Channel_about_page/channelabout';
 import { AddvideopopoverPage } from '../Add_video_popover_page/addvideopopover';
+import { UploadTabsPage } from '../upload-tabs/upload-tabs';
 
 @Component({
   selector: 'page-create',
@@ -33,4 +34,10 @@ export class CreatePage {
     //   ev: myEvent
     // });
   }
+
+  edit() {
+    this.navCtrl.push(UploadTabsPage);
+    
+  }
+
 }

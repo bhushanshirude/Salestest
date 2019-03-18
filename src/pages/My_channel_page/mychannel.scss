@@ -1,4 +1,7 @@
 page-mychannel {
+    .channel {
+        margin: 10px 0px 0px 0px;
+    }
     .clear {
         display: block;
         margin: 10px auto;  
@@ -16,12 +19,12 @@ page-mychannel {
      }
  
      h5 {
-         font-size: 12px;
+         font-size: 13px;
          margin: 10px 0px 0px 5px;
      }
  
      h4 {
-         font-size: 10px;
+         font-size: 11px;
          display: block;
          margin: 0px auto;
          color: red;
@@ -30,7 +33,7 @@ page-mychannel {
      p {
          display: block;
          margin: 0px 0px 0px 5px;
-         font-size: 10px;
+         font-size: 11px;
          color: #000;
      }
  
@@ -71,6 +74,7 @@ page-mychannel {
 
      .main img {
         width: 100%;
-        height: 80px;
+        height: 90px;
+        margin: 0px 0px 0px 5px;
     }
 }

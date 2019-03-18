@@ -1,5 +1,6 @@
 page-upload-video-details {
     p {
+        font-size: 12px;
         margin: 15px auto 0px auto;
         display: block;
         padding: 0px;
@@ -9,48 +10,107 @@ page-upload-video-details {
         width: 90px;
         float: left;
         border-radius: 20px;
+        margin: 10px 0px 20px 10px; 
     }
     .next {
         width: 90px;
         float: right;
         border-radius: 20px;
+        margin: 10px 10px 20px 0px;
     }
     
     .change-box{
-        margin: 20px auto;
+        margin: 15px auto;
         padding: 10px 10px;
         width: 90%;
-        border: 1px solid #cacaca;
+        border: 1px solid #f1f1f1;
         display: block;
         text-align: left;
+        box-shadow: 0px 2px 2px #ccc;
+
     }
 
     .change{
-        margin: 20px auto;
+        margin: 10px auto;
         width: 90%;
-        border: 1px solid #cacaca;
+        height: 10px;
+        border: 1px solid #f1f1f1;
         display: block;
         text-align: left;
+        box-shadow: 0px 2px 2px #ccc;
     }
 
     .view {
-        margin: 0px auto;
+        margin: 10px 0px 0px 10px;
         font-size: 13px;
-        float: left;
-    }
-    .viewss {
-        margin: 0px 0px 0px 0px;
-        font-size: 13px;
-        float: left;
+        font-weight: 500;
     }
 
     .views {
-        margin: 0px auto;
+        margin: 5px 0px 0px 10px;
         font-size: 13px;
-        float: right;
+        font-weight: 500;
     }
     .ion-md-lock:before {
         content: "\f31d";
-        margin: 0px 0px 0px 15px;
+        margin: 0px 0px 0px 10px;
     }
+   
+    .radio {
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        display: block;
+        width: 100%;
+        font-weight: 400;
+    }
+
+    .radio ion-radio{
+        display:block;
+        vertical-align: top;
+        width: 30px;
+        float: left;
+        margin-top: 13px;
+        margin-left: 10px;
+    }
+
+    .radio ion-label {
+        display: block;
+        vertical-align: top;
+        font-size: 13px;
+        font-weight: 400;
+        width: 50px;
+        float: left;
+
+    }
+
+    .clearfix{
+        clear: both;
+    }
+
+    .private {
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        display: block;
+        width: 100%;
+        font-weight: 400;
+    }
+
+    .private ion-checkbox{
+        display: inline-block;
+        margin-left: 10px;
+        top: 4px;
+    }
+
+    .private ion-icon{
+        display: inline-block;
+    }
+
+
+    .private h5{
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+   
 }

@@ -2,15 +2,28 @@
   <ion-navbar>
     <ion-title>Create Channel</ion-title>
   </ion-navbar>
-  <div class="header_image">
-    <img src="assets/imges/pexels-photo-257360.png">
-  </div>
-  <button ion-button color="primarys" (click)="presentPopover($event)">
-    <ion-icon ios="ios-add" md="md-add"></ion-icon> Add Video
-  </button>
+
+  <ion-row class="coverWrap">
+    <img src="assets/images/cover_back.jpg" class="coverImg" />
+    <div class="coverProfile">
+      <img src="assets/images/cover_profile.png" class="coverImgProfile" />
+    </div>
+  </ion-row>
+
+  <ion-row>
+    <div class="buttons">
+      <button ion-button color="primarys" (click)="presentPopover($event)">
+        <ion-icon ios="ios-add" md="md-add"></ion-icon> Add Video
+      </button>
+    </div>
+    <div class="setting" (click)="edit()">
+      <ion-icon ios="ios-settings" md="md-settings"></ion-icon>
+    </div>
+  </ion-row>
+
 </ion-header>
 
-<ion-content style="margin-top:10px;">
+<ion-content>
   <super-tabs style="height: 100%; color:white;" scrollTabs>
     <super-tab [root]="tab1Root" [title]="showTitles? 'Home' : ''" [icon]="showIcons? '' : ''"></super-tab>
     <super-tab [root]="tab2Root" [title]="showTitles? 'videos' : ''" [icon]="showIcons? '' : ''"></super-tab>

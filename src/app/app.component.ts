@@ -2,15 +2,15 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-// import { AccountloginPage } from '../pages/Account_login_page/accountlogin';
-import { TabsPage } from '../pages/tabs/tabs';
+import { AccountloginPage } from '../pages/Account_login_page/accountlogin';
+// import { TabsPage } from '../pages/tabs/tabs';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = TabsPage;
-  // rootPage: any = AccountloginPage;
+  // rootPage = TabsPage;
+  rootPage: any = AccountloginPage;
 
   constructor(platform: Platform, private statusBar: StatusBar, private splashScreen: SplashScreen) {
     platform.ready().then(() => {

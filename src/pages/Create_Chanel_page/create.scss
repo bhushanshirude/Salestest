@@ -2,9 +2,37 @@ page-create {
     super-tabs-toolbar > ion-toolbar.toolbar .tab-buttons-container .tab-buttons super-tab-button.title-only .title {
         line-height: 40px;
         color: #000;
-        font-size: 10px;
+        font-size: 11px;
     }
 
+    super-tabs-toolbar > ion-toolbar.toolbar .tab-buttons-container .tab-buttons super-tab-button {
+        text-align: center;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        width: 0;
+        height: 40px;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-left: 0;
+        margin-right: 0;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        -webkit-align-content: flex-end;
+        -ms-flex-line-pack: end;
+        align-content: flex-end;
+        padding: 0 12px;
+    }
 
     .item-md.item-input.item-input-has-focus .item-inner, .item-md.item-input.input-has-focus .item-inner{
         border-bottom-color: #000;
@@ -33,8 +61,8 @@ page-create {
         background-color: #df173e;
         margin: 10px 0px 10px 15px;
         border-radius: 20px;
-
-       
+        font-size: 10px;
+        width: 60%;
     }
 
     .header_image img {
@@ -47,14 +75,65 @@ page-create {
         margin: 0px 5px 0px 0px;
     }
 
-    .button-md-primary {
-        height: 30px;
-        font-size: 12px;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: rgb(255, 255, 255);
-        background-color: rgb(232, 51, 56);
-        border-radius: 20px;
+    // .button-md-primary {
+    //     height: 30px;
+    //     font-size: 12px;
+    //     font-weight: 500;
+    //     text-transform: uppercase;
+    //     color: rgb(255, 255, 255);
+    //     background-color: rgb(232, 51, 56);
+    //     border-radius: 20px;
+    //  }
+
+    .coverWrap {
+         margin: 0px;
+         padding: 0px;
+         display: block;
+         widows: 100%;
+         height: 140px;
+         overflow: hidden;
+         position: relative;   
+        }
+     .coverImg{
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        height: 110px;
+    }
+    .coverProfile{
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 0px;
+        left: 5%;
+   }
+
+    .anchEdit { 
+        position: relative; 
+        right: 25px; 
+        top: 12px; 
+        text-decoration: none;
+    }
+
+    .anchCoverPhoto{
+        position: absolute; 
+        right: 5%; 
+        bottom: 20px; 
+        text-decoration: none;
+    }
+
+    .buttons {
         float: left;
-     }
+        width: 50%;
+    }
+    .setting {
+        float: right;
+        width: 10%;
+        display: block;
+        text-align: right;
+        margin-left: 32%;
+    }
 }

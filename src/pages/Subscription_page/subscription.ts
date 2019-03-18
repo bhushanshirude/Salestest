@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, App } from 'ionic-angular';
 import { AccountPage } from '../Account/account';
 import { VideoDetailsPage } from '../Video_details_page/video-details';
+import { UploadTabsPage } from '../upload-tabs/upload-tabs';
 
 @Component({
   selector: 'page-subscription',
@@ -22,5 +23,9 @@ export class SubscriptionPage {
 
   seen() {
     this.appCtrl.getRootNavs()[0].push(VideoDetailsPage);
+  }
+  
+  video() {
+    this.appCtrl.getRootNavs()[0].push(UploadTabsPage);
   }
 }

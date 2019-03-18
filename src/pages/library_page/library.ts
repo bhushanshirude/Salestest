@@ -4,6 +4,7 @@ import { AccountPage } from '../Account/account';
 import { HistoryPage } from '../History_page/history';
 import { WatchLaterPage } from '../Watch_later_page/watch-later';
 import { VideoDetailsPage } from '../Video_details_page/video-details';
+import { UploadTabsPage } from '../upload-tabs/upload-tabs';
 
 @Component({
   selector: 'page-library',
@@ -31,6 +32,10 @@ export class LibraryPage {
   }
   seen() {
     this.appCtrl.getRootNavs()[0].push(VideoDetailsPage);
+  }
+
+  video() {
+    this.appCtrl.getRootNavs()[0].push(UploadTabsPage);
   }
 
 }
