@@ -21,56 +21,61 @@
       </ion-row>
     </ion-grid> -->
   </ion-navbar>
+  <div class="profile">
+    <!-- <img src="assets/imges/ace_disco_party_sounds_background_image.png"> -->
+    <ion-row class="sectionss">
+      <img src="assets/imgs/new-user.png">
+      <h2>Profile <ion-icon class="down" ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon>
+      </h2>
+    </ion-row>
+  </div>
 </ion-header>
 
 <ion-content>
-  <ion-row class="section">
-    <ion-icon name="md-cloud-done"></ion-icon>
-    <h2>Profile</h2>
-  </ion-row>
+
   <ion-row class="section" (click)="myChannel()">
-    <ion-icon name="md-cloud-done"></ion-icon>
+    <img src="assets/imgs/radio-box-on-tune.png">
     <h2>My Channel</h2>
   </ion-row>
 
   <ion-row class="section" (click)="create()">
-    <ion-icon name="md-cloud-done"></ion-icon>
+    <img src="assets/imgs/pen.png">
     <h2>Create Channels</h2>
   </ion-row>
   <!-- <ion-row class="section">
-    <ion-icon name="md-cloud-done"></ion-icon>
+   <img src="assets/imgs/pen.png">
     <h2>Switch account</h2>
   </ion-row> -->
   <ion-row class="section">
-    <ion-icon name="md-cloud-done"></ion-icon>
+    <img src="assets/imgs/time.png">
     <h2>Timed Watched</h2>
   </ion-row>
   <ion-row class="section" (click)="skip()">
-    <ion-icon name="md-cloud-done"></ion-icon>
+    <img src="assets/imgs/pen.png">
     <h2>Skip add</h2>
   </ion-row>
 
   <ion-row class="section">
-    <ion-icon name="md-cloud-done"></ion-icon>
+    <ion-icon ios="ios-power" md="md-power"></ion-icon>
     <h2>Sign out</h2>
   </ion-row>
   <hr>
 
   <ion-row class="sections" (click)="setting()">
-    <ion-icon name="md-cloud-done"></ion-icon>
+    <ion-icon ios="ios-settings" md="md-settings"></ion-icon>
     <h2>Setting</h2>
   </ion-row>
   <ion-row class="section">
-    <ion-icon name="md-cloud-done"></ion-icon>
+    <img src="assets/imgs/file.png">
     <h2>Terms & privacy policy</h2>
   </ion-row>
   <ion-row class="section">
-    <ion-icon name="md-cloud-done"></ion-icon>
+    <img src="assets/imgs/help-operator.png">
     <h2>Help & Feedback</h2>
   </ion-row>
 
-  <ion-row class="section" (click)="skips()">
-    <ion-icon name="md-cloud-done"></ion-icon>
+  <!-- <ion-row class="section" (click)="skips()">
+   <img src="assets/icon/pen.png">
     <h2>Video Upload</h2>
-  </ion-row>
+  </ion-row> -->
 </ion-content>

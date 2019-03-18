@@ -41,17 +41,30 @@ page-account {
         margin: 10px 0px 8px 15px;
         padding: 4px;
     }
-    
-    // .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
-    //     color: #fd2020;
-    // }
-    
-    // .back-button.show-back-button {
-    //     display: none; 
-    // }
 
-    // .ion-md-close:before {
-    //     content: "\f2c0";
-    //     margin: 20px 0px 0px 0px;
-    // }
+    img {
+        max-width: 15px;
+        height: 15px;
+        margin: 5px 0px 0px 0px;
+    }
+    .profile {
+        background-color: #ffead2;
+        height: 100px;
+    }
+
+    .profile img{
+        // width: 100% !important;
+        // height: 100px;
+    }
+    .scroll-content{
+        margin-top: 160px !important; 
+    }
+
+    .sectionss {
+       padding: 60px 0px 0px 20px;    
+    }
+
+    .down {
+        margin: 0px 0px 0px 0px;
+    }
 }

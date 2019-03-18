@@ -26,13 +26,91 @@ page-subscription {
         margin: 22px 0px 10px 15px;
     }
 
-    h2 {
-        font-size: 12px;
-        margin: 2px 0px 0px 10px;
+    .main img {
+        width: 100%;
+        height: 200px;
     }
-    
-    .section{
-        margin: 0px 0px 8px 0px;
-        padding: 3px;
+
+    h6 {
+        font-size: 13px;
+        margin: 5px 10px 0px 10px;
+    }
+    .seeallh5{
+        margin: 0px;
+        padding: 0px;
+        font-size: 14px;
+        color: #111111;;
+        display: inline-block;
+    }
+
+    .circleDiv{
+        padding: 0px;
+        display: block;
+        width: 100%;
+        font-size: 11px;
+        margin: -12px 0px 10px 10px;
+
+    }
+    .circleDiv h4 { 
+        font-size: 11px;
+        display: inline-block;
+     }
+
+    .circle {
+        margin: 0px 0px 0px 2px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50px;
+        background-color: rgb(121, 117, 117);
+        display: inline-block;
+    }
+    .red_circle .circleCnt .circleRound.seeall{
+        background: transparent;
+        color:#111111;
+        padding-top: 16px;
+    }
+    .ion-md-more:before {
+        content: "\f1c9";
+        margin: 6px 0px 0px 0px;
+    }
+
+    .red_circle{
+        margin: 0px auto;
+        padding: 0px;
+        width: 100%;
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    .red_circle .circleCnt{
+        margin: 10px 0;
+        padding: 0px;
+        display: inline-block;
+        position: relative; 
+        width: 18%;
+    }
+    .red_circle .circleCnt .circleRound{
+        margin: 0px auto;
+        padding: 0px;
+        width: 45px;
+        height: 45px;
+        background: #df173e;
+        color: #fff;
+        border-radius: 50%;
+        display: block;
+        position: relative; 
+    }
+    .red_circle .circleCnt .circleRound img { 
+        max-width: 50%; 
+        margin-top: 12px;
+    }
+    .red_circle .circleCnt p{
+        margin: 6px 0px 0px 0px;
+        padding: 0px;
+        color: #000;
+        font-size: 12px;
+        text-align: center;
+        display: block;
+        width: 100%;
     }
 }

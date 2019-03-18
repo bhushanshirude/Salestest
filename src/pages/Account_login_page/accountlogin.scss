@@ -12,7 +12,7 @@ page-accountlogin {
         background-size: cover;
     }
     .loginTop{
-        margin: 0px;
+        margin: 22% 0 0 0;
         padding: 0px;
         width: 100%;
         display: block;
@@ -33,28 +33,30 @@ page-accountlogin {
     .logo img {
         max-width: 50%;
         margin-top: 5%; 
-        margin-bottom: 8%;
+        margin-bottom: 5%;
     } 
     .title_login{
         margin: 0 auto;
         padding: 0px;
         width: 90%;
+        text-align: center;
         display: block;
-        font-weight: 400;
-        font-size: 20px;
+        font-weight: 600;
+        font-size: 24px;
         font-family: 'Montserrat', sans-serif;
     }
     
     .loginCnt{
         margin: 0px auto;
         padding: 0px;
-        width: 90%;
+        width: 80%;
         display: block;
         position: relative;    
     }
     .loginCnt ion-item{
         padding-left: 0px;
         position: relative;
+        font-size: 12px;
     }
     .icon_email{
         position: relative;
@@ -62,13 +64,13 @@ page-accountlogin {
         margin-right: 10px;
     }
     .checkbox_login .checkbox{
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
         border-radius: 2px;
         margin-right: 5px;
     }
     .checkbox_login .checkbox input{
-        width: 20px;
+        width: 16px;
         height: 20px;
         background-color:transparent;
         position: relative;
@@ -89,20 +91,21 @@ page-accountlogin {
         // background-size: cover;  
     }
     .btn_login{
-        margin: 0px auto;
+        margin: 30px auto  0px auto;
         padding: 0px;
-        width: 50%;
+        width: 240px;
         height: 48px;
         background: #e83338;
         color: #fff;
-        font-size: 15px;
-        font-weight: 300;
+        font-size: 18px;
+        font-weight: 500;
         display: block; 
         box-shadow: inherit;
         border-radius: 40px;
         font-family: 'Montserrat', sans-serif;
         text-transform: capitalize;
     }
+    .btn_login img{ max-width: 40%;}
     .txt_forget{
         margin: 10px 0px 0px 0px;
         padding: 0px;
@@ -116,10 +119,18 @@ page-accountlogin {
     }
     
     .social_icon{
-        margin: 30px 0px 20px 0px;
+        margin: 40px 0px 0px 0px;
         padding: 0px;
         width: 100%;
         text-align: center;   
+        text-decoration: none;
+        display: inline-block;
+        background: transparent;
+        color:#fff;
+    }
+    .social_icon a{
+        text-decoration: none;
+        color:#fff;
     }
     .social_icon img{ width: 30px;  height: 30px;}
     
@@ -142,7 +153,30 @@ page-accountlogin {
 
     .list-md .item-block .item-inner {
         border-bottom: 1px solid #dedede;
-        height: 80px;
+        //height: 80px;
     }
     
+
+
+
+
+
+
+/*** **/
+.inputEmail{
+    border: 1px solid #eceaea;
+    margin: 15px 0px;
+}
+
+label.label-md{
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
 }

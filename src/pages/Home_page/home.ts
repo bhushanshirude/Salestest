@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NavController, App } from 'ionic-angular';
+import { Component} from '@angular/core';
+import { NavController, App} from 'ionic-angular';
 import { AccountPage } from '../Account/account';
 import { UploadTabsPage } from '../upload-tabs/upload-tabs';
 import { VideoDetailsPage } from '../Video_details_page/video-details';
@@ -10,7 +10,23 @@ import { VideoDetailsPage } from '../Video_details_page/video-details';
 })
 
 export class HomePage {
-  constructor(public navCtrl: NavController, public appCtrl: App) { }
+  // myNavbarColor: string;
+  // public plt: Platform
+  constructor(public navCtrl: NavController, public appCtrl: App) {
+    // if (this.plt.is('ios')) {
+    //   // This will only print when on iOS
+    //   console.log('I am an iOS device!');
+    //   this.myNavbarColor = "#32db64"
+    // }
+    // else if (this.plt.is('android')) {
+    //   console.log('I am an Android device!');
+    //   this.myNavbarColor = "#e83338"
+    // }
+    // else if (this.plt.is('windows')) {
+    //   console.log('I am an windows device!');
+    //   this.myNavbarColor = "#FFFFFF"
+    // }
+  }
 
   account() {
     this.appCtrl.getRootNavs()[0].push(AccountPage);
@@ -21,7 +37,7 @@ export class HomePage {
   }
 
   seen() {
-      this.appCtrl.getRootNavs()[0].push(VideoDetailsPage);
+    this.appCtrl.getRootNavs()[0].push(VideoDetailsPage);
   }
-  
+
 }

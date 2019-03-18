@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { App } from 'ionic-angular/components/app/app';
 import { AccountregisterPage } from '../Account_register_page/accountregister';
 import { TabsPage } from '../tabs/tabs';
+import { AccountforgotPage } from '../Account_forgotpassword_page/accountforgot';
 
 @Component({
   selector: 'page-accountlogin',
@@ -21,7 +22,7 @@ export class AccountloginPage {
   }
 
   forgot() {
-    // this.appCtrl.getRootNavs()[0].setRoot(AccountverificationPage)
+    this.appCtrl.getRootNavs()[0].setRoot(AccountforgotPage)
   }
 
   login() {

@@ -1,9 +1,13 @@
 <ion-header>
-  <video controls="controls" preload="metadata" autoplay="autoplay" webkit-playsinline="webkit-playsinline"
-    poster="assets/imges/pexels-photo-257360.png">
+  <!-- webkit-playsinline="webkit-playsinline" preload="metadata" -->
+  <video controls="musicControls" autoplay="autoplay" poster="assets/imges/ace_disco_party_sounds_background_image.png">
     <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4"
       type="video/mp4" />
   </video>
+</ion-header>
+
+
+<ion-content>
   <ion-row>
     <ion-col col-11>
       <h6>Disney's Aladdin Offical Trailer-in Theaters May 24 </h6>
@@ -16,19 +20,44 @@
       <ion-icon ios="ios-more" md="md-more"></ion-icon>
     </ion-col>
   </ion-row>
-  <!-- <ion-row>
-    <ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon>
-    <ion-icon ios="ios-share" md="md-share"></ion-icon>
-    <ion-icon ios="ios-download" md="md-download"></ion-icon>
-    <ion-icon ios="ios-thumbs-down" md="md-thumbs-down"></ion-icon>
-    <ion-icon ios="ios-bookmark" md="md-bookmark"></ion-icon>
-  </ion-row> -->
-</ion-header>
+  <ion-row>
+    <ion-col col-1></ion-col>
+    <ion-col col-2>
+      <ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon>
+      <p class="paragraph">26 K</p>
+    </ion-col>
 
+    <ion-col col-2>
+      <ion-icon ios="ios-thumbs-down" md="md-thumbs-down"></ion-icon>
+      <p class="paragraph">26 K</p>
+    </ion-col>
 
-<ion-content>
-  <ion-row class="containt">
-    <ion-col col-6 (click)="seen()">
+    <ion-col col-2>
+      <ion-icon ios="ios-share" md="md-share"></ion-icon>
+      <p class="paragraph">Share</p>
+    </ion-col>
+
+    <ion-col col-3>
+      <ion-icon ios="ios-download" md="md-download"></ion-icon>
+      <p class="paragraph">Download</p>
+    </ion-col>
+
+    <ion-col col-2>
+      <ion-icon ios="ios-bookmark" md="md-bookmark"></ion-icon>
+      <p class="paragraph">Save</p>
+    </ion-col>
+    <!-- <ion-col col-1></ion-col> -->
+  </ion-row>
+  <hr>
+  <ion-row>
+    <ion-col col-7>
+      Up next
+    </ion-col>
+    <h5>Autoplay</h5>
+    <ion-toggle color="dark"></ion-toggle>
+  </ion-row>
+  <ion-row class="containt" (click)="seen()">
+    <ion-col col-6>
       <img src="assets/imges/pexels-photo-257360.png">
     </ion-col>
     <ion-col col-5>
@@ -40,12 +69,12 @@
       </div>
     </ion-col>
     <ion-col col-1>
-      <ion-icon ios="ios-trash" md="ios-trash"></ion-icon>
+      <!-- <ion-icon ios="ios-trash" md="ios-trash"></ion-icon> -->
     </ion-col>
   </ion-row>
 
-  <ion-row class="containt">
-    <ion-col col-6 (click)="seen()">
+  <ion-row class="containt" (click)="seen()">
+    <ion-col col-6>
       <img src="assets/imges/pexels-photo-257360.png">
     </ion-col>
     <ion-col col-5>
@@ -57,11 +86,11 @@
       </div>
     </ion-col>
     <ion-col col-1>
-      <ion-icon ios="ios-trash" md="ios-trash"></ion-icon>
+      <!-- <ion-icon ios="ios-trash" md="ios-trash"></ion-icon> -->
     </ion-col>
   </ion-row>
-  <ion-row class="containt">
-    <ion-col col-6 (click)="seen()">
+  <ion-row class="containt" (click)="seen()">
+    <ion-col col-6>
       <img src="assets/imges/pexels-photo-257360.png">
     </ion-col>
     <ion-col col-5>
@@ -73,11 +102,11 @@
       </div>
     </ion-col>
     <ion-col col-1>
-      <ion-icon ios="ios-trash" md="ios-trash"></ion-icon>
+      <!-- <ion-icon ios="ios-trash" md="ios-trash"></ion-icon> -->
     </ion-col>
   </ion-row>
-  <ion-row class="containt">
-    <ion-col col-6 (click)="seen()">
+  <ion-row class="containt" (click)="seen()">
+    <ion-col col-6>
       <img src="assets/imges/pexels-photo-257360.png">
     </ion-col>
     <ion-col col-5>
@@ -89,7 +118,7 @@
       </div>
     </ion-col>
     <ion-col col-1>
-      <ion-icon ios="ios-trash" md="ios-trash"></ion-icon>
+      <!-- <ion-icon ios="ios-trash" md="ios-trash"></ion-icon> -->
     </ion-col>
   </ion-row>
 </ion-content>

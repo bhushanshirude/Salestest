@@ -1,12 +1,12 @@
 page-accountverification {
     h1{
-        margin: 15px auto 15px auto;
+        margin: 20px auto 25px auto;
         padding: 0px;
         width: 90%;
         display: block;
         color: #111111;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 16px;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
     }
@@ -23,7 +23,7 @@ page-accountverification {
         background-size: cover;
     }
     .loginTop { 
-        margin: 0px; 
+        margin: 5% 0 0 0; 
         padding: 0px;
         width: 100%; 
         display: block; 
@@ -77,13 +77,13 @@ page-accountverification {
         position: relative;
     }
     .btn_login {
-        margin: 0px auto;
+        margin: 30px auto  0px auto;
         padding: 0px;
-        width: 240px;
+        width: 200px;
         height: 48px;
         background: #e83338;
         color: #fff;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
         display: block; 
         box-shadow: inherit;
@@ -93,14 +93,14 @@ page-accountverification {
     }
     .txt_forget{
         margin: 10px 0px 0px 0px;
-        padding: 0px;
+        padding: 0px; 
         width: 100%;
         text-align: center;
         font-size: 16px;
         color: #333;
         display: block;
         text-decoration: none;
-      cursor: pointer;
+        cursor: pointer;
     }
  
     .terms{
@@ -123,11 +123,11 @@ page-accountverification {
 
 
 .verification-top {
-     margin: 0px auto 0px auto; 
-     padding: 0px 0px 10px 0px; 
-     width: 90%; 
-     border-bottom: 1px solid #ccc;
-    }
+    margin: 0px auto 0px auto; 
+    padding: 0px 0px 10px 0px; 
+    width: 90%; 
+    border-bottom: 1px solid #ccc;
+}
 .verification-top .lock{
     margin: 0px;
     padding: 0px;
@@ -139,7 +139,7 @@ page-accountverification {
 .verification-top .lock ion-icon{ margin-right: 5px;}
 
 .verification-top .call{
-    margin: 4px 0px 0px 14px;
+    margin: 2px 0px 0px 14px;
     padding: 0px;
     color: #111111;
     display: inline-block;
@@ -154,20 +154,26 @@ page-accountverification {
 .verify_number { 
     margin: 0px auto 0px auto; 
     padding: 0px 0px 10px 0px; 
-    width: 70%; 
+    width: 80%; 
   } 
 
 .verify_number ion-input{
     margin: 0 10px;
     padding: 0;
-    width: 58px;
-    height: 58px;
+    width: 0px;
+    height: 40px;
+    line-height: 35px;
     border: 1px solid #eaeaea;
     box-shadow: -2px -3px 2px #efefef;
     text-align: center;
     display: block;
-    font-size: 30px;
+    font-size: 24px;
     font-family: 'Montserrat', sans-serif;
+}
+.verify_number ion-input .text-input-md{
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
 }
 .text-input-md {
      text-align: center; 
@@ -194,7 +200,7 @@ page-accountverification {
     width: 100%; 
     margin: 10px 0px 20px 0px; 
     text-align: center; 
-    font-size: 18px;
+    font-size: 14px;
 }
 .text-code span { 
     color:#e83338; 
@@ -207,6 +213,7 @@ page-accountverification {
     display: block; 
 }
 .verify_icon img{ 
-    max-width: 50%;
+    max-width: 36%;
 }
+
 }

@@ -2,7 +2,7 @@ page-create {
     super-tabs-toolbar > ion-toolbar.toolbar .tab-buttons-container .tab-buttons super-tab-button.title-only .title {
         line-height: 40px;
         color: #000;
-        font-size: 12px;
+        font-size: 10px;
     }
 
 
@@ -28,14 +28,17 @@ page-create {
         content: "";
     }
 
-    .button-md-primary {
+    .button-md-primarys {
         color: #fff;
         background-color: #df173e;
+        margin: 10px 0px 10px 15px;
+        border-radius: 20px;
+
        
     }
 
     .header_image img {
-        height: 100px;
+        height: 150px;
         width: 100%;
     }
 
@@ -44,7 +47,7 @@ page-create {
         margin: 0px 5px 0px 0px;
     }
 
-    .button-md {
+    .button-md-primary {
         height: 30px;
         font-size: 12px;
         font-weight: 500;

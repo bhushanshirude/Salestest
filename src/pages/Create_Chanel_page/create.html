@@ -5,17 +5,17 @@
   <div class="header_image">
     <img src="assets/imges/pexels-photo-257360.png">
   </div>
-  <button ion-button>
+  <button ion-button color="primarys" (click)="presentPopover($event)">
     <ion-icon ios="ios-add" md="md-add"></ion-icon> Add Video
   </button>
 </ion-header>
 
-<ion-content>
-  <super-tabs style="height: 100%; color:white;">
+<ion-content style="margin-top:10px;">
+  <super-tabs style="height: 100%; color:white;" scrollTabs>
     <super-tab [root]="tab1Root" [title]="showTitles? 'Home' : ''" [icon]="showIcons? '' : ''"></super-tab>
     <super-tab [root]="tab2Root" [title]="showTitles? 'videos' : ''" [icon]="showIcons? '' : ''"></super-tab>
     <super-tab [root]="tab3Root" [title]="showTitles? 'playlist' : ''" [icon]="showIcons? '' : ''"></super-tab>
-    <super-tab [root]="tab4Root" [title]="showTitles? 'pay method' : ''" [icon]="showIcons? '' : ''"></super-tab>
+    <super-tab [root]="tab4Root" [title]="showTitles? 'pay Method' : ''" [icon]="showIcons? '' : ''"></super-tab>
     <super-tab [root]="tab5Root" [title]="showTitles? 'About' : ''" [icon]="showIcons? '' : ''"></super-tab>
   </super-tabs>
 </ion-content>

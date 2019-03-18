@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, App, ViewController, MenuController } from 'ionic-angular';
 import { SettingPage } from '../setting/setting';
 import { TabsPage } from '../tabs/tabs';
-import { CreatePage } from '../Create_Chanel_page/create';
 import { SkipaddPage } from '../Skip_add_page/skipadd';
 import { UploadTabsPage } from '../upload-tabs/upload-tabs';
 import { MychannelPage } from '../My_channel_page/mychannel';
+import { CreatenewPage } from '../Create_New_channel_page/createnew';
 
 @Component({
   selector: 'page-account',
@@ -52,7 +52,7 @@ export class AccountPage {
     this.appCtrl.getRootNavs()[0].push(SettingPage);
   }
   create() {
-    this.appCtrl.getRootNavs()[0].push(CreatePage);
+    this.appCtrl.getRootNavs()[0].push(CreatenewPage);
   }
 
   myChannel() {

@@ -1,0 +1,32 @@
+<ion-content class="text">
+  <div class="popup-wrapper">
+    <div class="popup-cnt">
+      <ion-row class="popup">
+        <ion-col col-10>
+          <h6>Playlist Setting</h6>
+        </ion-col>
+        <ion-col col-2>
+          <a class="popup-close">
+            <ion-icon ios="ios-close-outline" md="ios-close-outline" (click)="dismiss()"></ion-icon>
+          </a>
+        </ion-col>
+      </ion-row>
+
+      <h4>ordering</h4>
+      <div class="search">
+        <ion-input placeholder="Manual"></ion-input>
+        <!-- <ion-icon ios="ios-search" md="md-search"></ion-icon> -->
+        <ion-icon ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon>
+      </div>
+
+      <h5 >
+        <ion-checkbox class="checkbox-add"></ion-checkbox> Add new videos to top of playlist
+      </h5>
+
+      <div class="back-buttons">
+        <button ion-button (click)="Send()" class="addvideo">Save</button>
+        <button ion-button (click)="Send()" class="cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -7,11 +7,11 @@ page-video-details {
     }
 
     .scroll-content {
-        margin:245px 0px 0px 0px !important; 
+        margin:210px 0px 0px 0px !important; 
     }
     
     .fixed-content {
-        margin:245px 0px 0px 0px !important; 
+        margin:210px 0px 0px 0px !important; 
     }
 
     .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
@@ -27,7 +27,7 @@ page-video-details {
     }
 
      .containt {
-        margin: 15px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
      }
 
      h5 {
@@ -102,5 +102,48 @@ page-video-details {
      [col-6] img {
          width: 140px;
          height: 80px;   
+         margin: 0px 0px 0px 15px;
      }
+
+     [col-5]{
+         margin: 0px 0px 0px 0px;
+     }
+
+     .paragraph {
+            display: block;
+            margin: 0px 0px 0px -5px !important;
+            font-size: 10px;
+            color: #000;
+        }
+
+        .ion-md-download:before {
+            content: "\f2e3";
+            margin: 0px 0px 0px 10px;
+        }
+
+        .toolbar-md {
+            padding: 5px;
+            height: 50px;
+        }   
+        .ion-md-thumbs-up:hover {
+            color: blue;
+        }
+
+        .ion-md-thumbs-down:hover{
+            color: red;
+        }
+        .ion-md-share:hover {
+            color: green;
+        }
+        .ion-md-download:hover{
+            color: green;
+        }
+
+        .ion-md-bookmark:hover{
+            color: green;
+        }
+
+        [col-7] {
+            margin: 0px 0px 0px 10px;
+        }
 }

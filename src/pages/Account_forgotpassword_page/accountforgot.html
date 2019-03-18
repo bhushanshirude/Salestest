@@ -1,0 +1,26 @@
+<ion-content class="loginWrap">
+  <form #Rehister="ngForm" (ngSubmit)="register()">
+    <ion-row class="loginTop">
+      <ion-col class="logo">
+        <img src="assets/images/wootubes-logo.png" />
+      </ion-col>
+      <h1 class="title_login">Password Recovery</h1>
+    </ion-row>
+
+    <ion-row class="loginCnt">
+      <ion-list>
+          <ion-input type="text" class="inputEmail" placeholder="Email"></ion-input>
+      </ion-list>
+    </ion-row>
+
+    <ion-row class="loginBottom">
+      <button ion-button class="btn_login" type="submit">Submit
+        <img class="icon_arrow" src="assets/images/icon_arrow_white.png" />
+      </button>
+      <div class="newuser" (click)="singin()">
+        Already have an
+        <a href="#.">account?</a>
+      </div>
+    </ion-row>
+  </form>
+</ion-content>

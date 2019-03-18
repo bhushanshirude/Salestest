@@ -38,10 +38,19 @@ page-upload-video-details {
         font-size: 13px;
         float: left;
     }
+    .viewss {
+        margin: 0px 0px 0px 0px;
+        font-size: 13px;
+        float: left;
+    }
 
     .views {
         margin: 0px auto;
         font-size: 13px;
         float: right;
+    }
+    .ion-md-lock:before {
+        content: "\f31d";
+        margin: 0px 0px 0px 15px;
     }
 }

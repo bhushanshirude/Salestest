@@ -14,6 +14,7 @@ page-home {
         border-radius: 50%;
         margin: 13px 0px 10px 15px;
         border: 1px solid rgb(158, 155, 155);
+        
     }
 
     .ion-md-videocam:before {
@@ -96,5 +97,7 @@ page-home {
         content: "\f1c9";
         margin: 6px 0px 0px 0px;
     }
+
+    .toolbar-background-md, .toolbar-background-ios{ background: transparent;}
 
 }

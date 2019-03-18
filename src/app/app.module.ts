@@ -34,6 +34,10 @@ import { ChannelplaylistPage } from '../pages/Create_Chanel_page/Channel_playlis
 import { ChannelvideosPage } from '../pages/Create_Chanel_page/Channel_videos_page/channelvideos';
 import { CreatenewPage } from '../pages/Create_New_channel_page/createnew';
 import { VideoDetailsPage } from '../pages/Video_details_page/video-details';
+import { AddvideopopoverPage } from '../pages/Add_video_popover_page/addvideopopover';
+import { MychanelDeletePage } from '../pages/My_channel_delete_page/mychanel-delete';
+import { PlaylistPopupPage } from '../pages/Playlist_popup_page/playlist-popup';
+import { AccountforgotPage } from '../pages/Account_forgotpassword_page/accountforgot';
 
 
 @NgModule({
@@ -42,6 +46,8 @@ import { VideoDetailsPage } from '../pages/Video_details_page/video-details';
     AccountloginPage,
     AccountverificationPage,
     AccountregisterPage,
+    AccountforgotPage,
+    AddvideopopoverPage,
     MyApp,
     BlogPage,
     CreatePage,
@@ -55,6 +61,8 @@ import { VideoDetailsPage } from '../pages/Video_details_page/video-details';
     HistoryPage,
     LibraryPage,
     MychannelPage,
+    MychanelDeletePage,
+    PlaylistPopupPage,
     TabsPage,
     TrendingPage,
     SubscriptionPage,
@@ -80,6 +88,8 @@ import { VideoDetailsPage } from '../pages/Video_details_page/video-details';
     AccountloginPage,
     AccountverificationPage,
     AccountregisterPage,
+    AccountforgotPage,
+    AddvideopopoverPage,
     MyApp,
     BlogPage,
     CreatePage,
@@ -93,6 +103,8 @@ import { VideoDetailsPage } from '../pages/Video_details_page/video-details';
     HistoryPage,
     LibraryPage,
     MychannelPage,
+    MychanelDeletePage,
+    PlaylistPopupPage,
     TabsPage,
     TrendingPage,
     SubscriptionPage,

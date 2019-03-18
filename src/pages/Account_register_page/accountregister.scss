@@ -12,7 +12,7 @@ page-accountregister {
         background-size: cover;
     }
     .loginTop{
-        margin: 0px;
+        margin: 10% 0px 0px 0px;
         padding: 0px;
         width: 100%;
         display: block;
@@ -29,15 +29,16 @@ page-accountregister {
     .logo img { 
         max-width: 40%; 
         margin-top: 5%; 
-        margin-bottom: 5%;
+        margin-bottom: 10%;
     } 
     .title_login{
         margin: 0 auto;
         padding: 0px;
         width: 90%;
+        text-align: center;
         display: block;
-        font-weight: 400;
-        font-size: 20px;
+        font-weight: 600;
+        font-size: 24px;
         font-family: 'Montserrat', sans-serif;
     }
     
@@ -81,14 +82,14 @@ page-accountregister {
 
     }
     .btn_login{
-        margin: 0px auto;
+        margin: 30px auto 0px auto;
         padding: 0px;
-        width: 50%;
+        width: 240px;
         height: 48px;
         background: #e83338;
         color: #fff;
-        font-size: 15px;
-        font-weight: 300;
+        font-size: 18px;
+        font-weight: 500;
         display: block; 
         box-shadow: inherit;
         border-radius: 40px;
@@ -128,4 +129,25 @@ page-accountregister {
         border-bottom: 1px solid #dedede;
         height: 75px;
     }
+
+
+
+
+/****  ****/
+.inputEmail{
+    border: 1px solid #eceaea;
+    margin: 15px 0px;
+}
+
+label.label-md{
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
 }

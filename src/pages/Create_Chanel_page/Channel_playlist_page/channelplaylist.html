@@ -8,11 +8,11 @@
         <ion-col col-5>
             <h5>My Neighbor Totoro</h5>
             <p>Hayao Miyazaki • 1988</p>
-            <button ion-button>
+            <button ion-button (click)="add()">
                 <ion-icon ios="ios-add" md="md-add"></ion-icon> Add Video
             </button>
         </ion-col>
-        <ion-col col-1>
+        <ion-col col-1 (click)="presentPopover($event)">
             <ion-icon ios="ios-settings" md="md-settings"></ion-icon>
         </ion-col>
     </ion-row>
@@ -26,11 +26,11 @@
         <ion-col col-5>
             <h5>My Neighbor Totoro</h5>
             <p>Hayao Miyazaki • 1988</p>
-            <button ion-button>
+            <button ion-button (click)="add()">
                 <ion-icon ios="ios-add" md="md-add"></ion-icon> Add Video
             </button>
         </ion-col>
-        <ion-col col-1>
+        <ion-col col-1 (click)="presentPopover($event)">
             <ion-icon ios="ios-settings" md="md-settings"></ion-icon>
         </ion-col>
     </ion-row>
