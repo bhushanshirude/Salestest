@@ -5,8 +5,8 @@ import { ChannelvideosPage } from './Channel_videos_page/channelvideos';
 import { ChannelplaylistPage } from './Channel_playlist_page/channelplaylist';
 import { ChannelpaymethodPage } from './Channel_paymethod_page/channelpaymethod';
 import { ChannelaboutPage } from './Channel_about_page/channelabout';
-import { AddvideopopoverPage } from '../Add_video_popover_page/addvideopopover';
 import { UploadTabsPage } from '../upload-tabs/upload-tabs';
+import { MychannelEditPage } from '../My_channel_edit_page/mychannel-edit';
 
 @Component({
   selector: 'page-create',
@@ -28,16 +28,11 @@ export class CreatePage {
   }
 
   presentPopover(myEvent) {
-    this.modalCtrl.create(AddvideopopoverPage, { cssClass: 'inset-modal' }).present();
-    // let popover = this.popoverCtrl.create(AddvideopopoverPage);
-    // popover.present({
-    //   ev: myEvent
-    // });
+    this.navCtrl.push(UploadTabsPage);
   }
 
   edit() {
-    this.navCtrl.push(UploadTabsPage);
-    
+    this.navCtrl.push(MychannelEditPage);
   }
 
 }

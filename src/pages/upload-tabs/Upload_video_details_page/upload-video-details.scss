@@ -41,23 +41,23 @@ page-upload-video-details {
     }
 
     .view {
-        margin: 10px 0px 0px 10px;
+        margin: 25px 0px -8px 20px;
         font-size: 13px;
         font-weight: 500;
     }
 
     .views {
-        margin: 5px 0px 0px 10px;
+        margin: 5px 0px -6px 20px;
         font-size: 13px;
         font-weight: 500;
     }
     .ion-md-lock:before {
         content: "\f31d";
-        margin: 0px 0px 0px 10px;
+        margin: 0px 0px 0px 00px;
     }
    
     .radio {
-        margin: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 20px;
         padding: 0px;
         display: block;
         width: 100%;
@@ -70,17 +70,33 @@ page-upload-video-details {
         width: 30px;
         float: left;
         margin-top: 13px;
-        margin-left: 10px;
+        margin-left: 0px;
     }
 
+
+    .radio ion-checkbox{
+        display:block;
+        vertical-align: top;
+        width: 30px;
+        float: left;
+        margin-top: 13px;
+        margin-left: 0px;
+    }
+    .radio ion-radio.test { 
+        margin-top: 5px;
+    }
+    .radio-group {  
+        position: relative; 
+        top: -10px;
+    }
     .radio ion-label {
         display: block;
         vertical-align: top;
         font-size: 13px;
         font-weight: 400;
-        width: 50px;
+        width: 60px;
         float: left;
-
+        margin-left: -8px;
     }
 
     .clearfix{
@@ -88,7 +104,7 @@ page-upload-video-details {
     }
 
     .private {
-        margin: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 20px;
         padding: 0px;
         display: block;
         width: 100%;
@@ -97,7 +113,7 @@ page-upload-video-details {
 
     .private ion-checkbox{
         display: inline-block;
-        margin-left: 10px;
+        margin-left: 0px;
         top: 4px;
     }
 
@@ -108,7 +124,7 @@ page-upload-video-details {
 
     .private h5{
         display: inline-block;
-        font-size: 13px;
+        font-size: 11px;
         font-weight: 400;
     }
 

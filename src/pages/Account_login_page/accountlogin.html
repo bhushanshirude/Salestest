@@ -1,3 +1,54 @@
+<!-- <ion-content class="loginWrap">
+  <form [formGroup]="formgroup" (ngSubmit)="login()">
+    <ion-row class="loginTop">
+      <ion-col class="logo">
+        <img src="assets/images/wootubes-logo.png" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="loginCnt">
+      <ion-list>
+        <ion-input type="text" class="inputEmail" placeholder="First_Name" formControlName="first_name"></ion-input>
+      </ion-list>
+      <div *ngIf="first_name.hasError('required') && first_name.touched">
+        <h6>First Name is Required</h6>
+      </div>
+      <ion-list>
+        <ion-input type="text" class="inputEmail" placeholder="last_Name" formControlName="last_name"></ion-input>
+      </ion-list>
+      <div *ngIf="last_name.hasError('required') && last_name.touched">
+        <h6>last Name is Required</h6>
+      </div>
+
+      <ion-list>
+        <ion-input type="email" class="inputEmail" placeholder="Email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/"
+          formControlName="email"></ion-input>
+      </ion-list>
+
+      <div *ngIf="email.hasError('required') && email.pattern">
+        <h6>Email is Required</h6>
+      </div>
+    </ion-row>
+
+    <ion-row class="loginBottom">
+      <button ion-button class="btn_login" type="submit"> Login <img class="icon_arrow"
+          src="assets/images/icon_arrow_white.png" /></button>
+      <a (click)="forgot()" class="txt_forget">Forgot your password?</a>
+
+      <div class="social_icon">
+        <a> <img src="assets/images/icon_fb.png" /> </a>
+        <a> <img src="assets/images/icon_twitter.png" /> </a>
+        <a> <img src="assets/images/icon_in.png" /> </a>
+      </div>
+      <div class="newuser" (click)="sign_Up()">
+        New user? <a>Signup here.</a>
+      </div>
+    </ion-row>
+  </form>
+</ion-content> -->
+
+
+
 <ion-content class="loginWrap">
   <form #loginfrom="ngForm" (ngSubmit)="login()">
     <ion-row class="loginTop">
@@ -5,11 +56,14 @@
         <img src="assets/images/wootubes-logo.png" />
       </ion-col>
     </ion-row>
-    
+
     <ion-row class="loginCnt">
       <ion-list>
-        <ion-input type="text" class="inputEmail" placeholder="Email"></ion-input>
-        <ion-input type="password" class="inputEmail" placeholder="Password"></ion-input>
+        <ion-input type="text" class="inputEmail" placeholder="FirstName"></ion-input>
+      </ion-list>
+
+      <ion-list>
+        <ion-input type="password?" class="inputEmail" placeholder="Password"></ion-input>
       </ion-list>
     </ion-row>
 
@@ -19,9 +73,9 @@
       <a (click)="forgot()" class="txt_forget">Forgot your password?</a>
 
       <div class="social_icon">
-        <a href="#."> <img src="assets/images/icon_fb.png" /> </a>
-        <a href="#."> <img src="assets/images/icon_twitter.png" /> </a>
-        <a href="#."> <img src="assets/images/icon_in.png" /> </a>
+        <a> <img src="assets/images/icon_fb.png" /> </a>
+        <a> <img src="assets/images/icon_twitter.png" /> </a>
+        <a> <img src="assets/images/icon_in.png" /> </a>
       </div>
       <div class="newuser" (click)="sign_Up()">
         New user? <a>Signup here.</a>

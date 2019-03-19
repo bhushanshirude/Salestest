@@ -3,7 +3,6 @@ import { NavController, App, PopoverController } from 'ionic-angular';
 import { AccountPage } from '../Account/account';
 import { UploadTabsPage } from '../upload-tabs/upload-tabs';
 import { VideoDetailsPage } from '../Video_details_page/video-details';
-import { PopoverPage } from '../popover_page/popover';
 
 @Component({
   selector: 'page-home',

@@ -3,7 +3,7 @@ import { NavController, NavParams, ModalController } from 'ionic-angular';
 import { VideoDetailsPage } from '../../Video_details_page/video-details';
 import { App } from 'ionic-angular/components/app/app';
 import { PlaylistPopupPage } from '../../Playlist_popup_page/playlist-popup';
-import { MychannelEditPage } from '../../My_channel_edit_page/mychannel-edit';
+import { AddvideopopoverPage } from '../../Add_video_popover_page/addvideopopover';
 
 
 @Component({
@@ -32,6 +32,7 @@ export class ChannelplaylistPage {
   }
 
   add(){
-    this.appCtrl.getRootNavs()[0].push(MychannelEditPage);
+    this.modalCtrl.create(AddvideopopoverPage, { cssClass: 'inset-modal' }).present();
+ 
   }
 }
