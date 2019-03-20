@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, App } from 'ionic-angular';
+import { App } from 'ionic-angular';
 import { AccountPage } from '../Account/account';
+import { NotificationPage } from '../Notification_page/notification';
+import { MessagePage } from '../Message_page/message';
 
 @Component({
   selector: 'page-blog',
   templateUrl: 'blog.html',
 })
 export class BlogPage {
-
-  constructor(public navCtrl: NavController, public appCtrl: App, public navParams: NavParams) {
+  showIcons: boolean = true;
+  showTitles: boolean = true;
+  pageTitle: string = 'Partial Home';
+  tab1Root = MessagePage;
+  tab2Root = NotificationPage;
+  constructor(public appCtrl: App) {
   }
 
   ionViewDidLoad() {

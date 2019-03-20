@@ -40,6 +40,8 @@ import { PlaylistPopupPage } from '../pages/Playlist_popup_page/playlist-popup';
 import { AccountforgotPage } from '../pages/Account_forgotpassword_page/accountforgot';
 import { MychannelEditPage } from '../pages/My_channel_edit_page/mychannel-edit';
 import { PopoverPage } from '../pages/popover_page/popover';
+import { MessagePage } from '../pages/Message_page/message';
+import { NotificationPage } from '../pages/Notification_page/notification';
 
 
 @NgModule({
@@ -62,9 +64,11 @@ import { PopoverPage } from '../pages/popover_page/popover';
     HomePage,
     HistoryPage,
     LibraryPage,
+    MessagePage,
     MychannelPage,
     MychannelEditPage,
     MychanelDeletePage,
+    NotificationPage,
     PlaylistPopupPage,
     TabsPage,
     TrendingPage,
@@ -106,9 +110,11 @@ import { PopoverPage } from '../pages/popover_page/popover';
     HomePage,
     HistoryPage,
     LibraryPage,
+    MessagePage,
     MychannelPage,
     MychannelEditPage,
     MychanelDeletePage,
+    NotificationPage,
     PlaylistPopupPage,
     TabsPage,
     TrendingPage,

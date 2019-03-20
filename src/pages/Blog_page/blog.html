@@ -19,6 +19,9 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <!-- <iframe src="http://img.mobiscroll.com/demos/trailer_iphone.m4v"></iframe> -->
+<ion-content class="tabscontent">
+  <super-tabs class="one">
+    <super-tab [root]="tab1Root" [title]="showTitles? 'Message' : ''" [icon]="showIcons? '' : ''"></super-tab>
+    <super-tab [root]="tab2Root" [title]="showTitles? 'Notification' : ''" [icon]="showIcons? '' : ''"></super-tab>
+  </super-tabs>
 </ion-content>
