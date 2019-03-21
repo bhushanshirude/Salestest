@@ -31,8 +31,8 @@ export class ChannelplaylistPage {
     // });
   }
 
-  add(){
+  add() {
     this.modalCtrl.create(AddvideopopoverPage, { cssClass: 'inset-modal' }).present();
- 
+
   }
 }

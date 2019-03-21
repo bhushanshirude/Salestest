@@ -1,15 +1,15 @@
 <ion-header>
-  <ion-navbar class="tools">
+  <ion-navbar class="tools" color="light">
     <ion-grid>
       <ion-row>
-        <ion-col col-4>
+        <ion-col col-5>
           <img src="assets/imges/wootubes-logo.png">
         </ion-col>
-        <ion-col col-1 offset-4 (click)="video()">
-          <ion-icon class="video" name="videocam"></ion-icon>
+        <ion-col class="video">
+          <img (click)="video()" src="assets/images/video-camera.png">
         </ion-col>
-        <ion-col col-1>
-          <ion-icon class="search" name="search"></ion-icon>
+        <ion-col class="search">
+          <img (click)="search()" src="assets/images/search.png">
         </ion-col>
         <ion-col col-2 (click)="account()">
           <img src="assets/imges/account.png">

@@ -24,3 +24,15 @@
     font-weight: 500;
     color: #716f6f;
 }
+
+.popover-md .popover-content {
+    border-radius: 2px;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    width: 165px;
+    height: 31%;
+    color: #000;
+    background: #fff;
+    -webkit-box-shadow: 0 3px 12px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 12px 2px rgba(0, 0, 0, 0.3);
+}   
