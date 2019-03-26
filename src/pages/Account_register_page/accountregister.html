@@ -11,24 +11,25 @@
         <ion-input class="inputEmail" type="text" placeholder="Full Name" name="FirstName" ngModel #FirstName="ngModel"
           required></ion-input>
       </ion-list>
-      <!-- <div *ngIf="FirstName.touched">
-        <h6>Enter First Name</h6>
-      </div> -->
+
       <div *ngIf="registerForm.submitted && FirstName.invalid">
         <h6>First Name is Required</h6>
       </div>
 
       <ion-list>
-        <ion-input class="inputEmail" type="text" placeholder="Phone No." name="phone" ngModel #phone="ngModel"
-          required></ion-input>
+        <ion-input class="inputEmail" maxLength="10" minLength="10" type="tel" placeholder="Phone No." name="phone"
+          ngModel #phone="ngModel" pattern="[789][0-9]{9}" required></ion-input>
       </ion-list>
 
-      <div *ngIf="registerForm.submitted && phone.invalid">
+      <div *ngIf="registerForm.submitted && phone.errors && phone.errors.required">
         <h6>Mobile Number is Required</h6>
+      </div>
+      <div *ngIf="registerForm.submitted && phone.errors && phone.errors.pattern">
+        <h6> Valid Mobile Number is Required</h6>
       </div>
 
       <ion-list>
-        <ion-input class="inputEmail" type="text" placeholder="Email" name="Email" ngModel #email="ngModel"
+        <ion-input class="inputEmail" type="email" placeholder="Email" name="Email" ngModel #email="ngModel"
           pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" required>
         </ion-input>
       </ion-list>
@@ -41,21 +42,23 @@
       </div>
 
       <ion-list>
-        <ion-input class="inputEmail" type="password" placeholder="Password" name="password" ngModel #password="ngModel"
-          required></ion-input>
+        <ion-input class="inputEmail" type="password" placeholder="Password" minlength="6" name="password" ngModel
+          #password="ngModel" required></ion-input>
       </ion-list>
 
       <div *ngIf="registerForm.submitted && password.invalid">
         <h6>Password is Required</h6>
+        <div *ngIf="password.errors.minlength">
+          <h6>Password must be at least 6 characters</h6>
+        </div>
       </div>
-
-      <ion-list>
+      <!-- <ion-list>
         <ion-input class="inputEmail" type="password" placeholder="Confirm Password" name="conpassword" ngModel
           #conpassword="ngModel" required></ion-input>
       </ion-list>
       <div *ngIf="registerForm.submitted && conpassword.invalid">
         <h6>Password is Required</h6>
-      </div>
+      </div> -->
     </ion-row>
 
     <ion-row class="loginBottom">
@@ -69,158 +72,3 @@
     </ion-row>
   </form>
 </ion-content>
-
-
-
-
-
-<!-- <ion-content class="loginWrap">
-  <form [formGroup]="formgroup" (ngSubmit)="register()">
-    <ion-row class="loginTop">
-      <ion-col class="logo">
-        <img src="assets/images/wootubes-logo.png" />
-      </ion-col>
-    </ion-row>
-
-    <ion-row class="loginCnt">
-      <ion-list>
-        <ion-input class="inputEmail" type="text" placeholder="Full Name" formControlName="first_name" required>
-        </ion-input>
-      </ion-list>
-      <div *ngIf="first_name.hasError('required') && first_name.touched">
-        <h6>First Name is Required</h6>
-      </div>
-
-      <ion-list>
-        <ion-input class="inputEmail" type="text" placeholder="Phone No." formControlName="phone_no" required>
-        </ion-input>
-      </ion-list>
-      <div *ngIf="phone_no.hasError('required') && phone_no.touched">
-        <h6>Phone No is Required</h6>
-      </div>
-
-      <ion-list>
-        <ion-input class="inputEmail" type="text" placeholder="Email" formControlName="email"
-          pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required></ion-input>
-      </ion-list>
-      <div *ngIf="email.hasError('required') && email.touched">
-        <h6>Email is Requireds</h6>
-      </div>
-
-      <div class="md-errors-spacer" [hidden]="email.valid || email.untouched">
-        <div *ngIf="email.errors && email.errors.required">
-          <h6>Email is Required</h6>
-        </div>
-        <div *ngIf="email.errors && email.errors.pattern">
-          <h6> Email is invalid</h6>
-        </div>
-      </div>
-
-      <ion-list>
-        <ion-input class="inputEmail" type="password" placeholder="Password" formControlName="password" required>
-        </ion-input>
-      </ion-list>
-      <div *ngIf="password.hasError('required') && password.touched">
-        <h6>Password is Required</h6>
-      </div>
-
-      <ion-list>
-        <ion-input class="inputEmail" type="password" placeholder="Confirm Password" formControlName="confpassword"
-          required>
-        </ion-input>
-      </ion-list>
-      <div *ngIf="confpassword.hasError('required') && confpassword.touched">
-        <h6>Conf is Required</h6>
-      </div>
-
-    </ion-row>
-
-    <ion-row class="loginBottom">
-      <button ion-button class="btn_login" type="submit">Register
-        <img class="icon_arrow" src="assets/images/icon_arrow_white.png" />
-      </button>
-      <div class="newuser" (click)="singin()">
-        Already have an
-        <a href="#.">account?</a>
-      </div>
-    </ion-row>
-  </form>
-</ion-content> -->
-
-
-
-<!-- <ion-content class="loginWrap">
-  <form [formGroup]="formgroup" (ngSubmit)="register()">
-    <ion-row class="loginTop">
-      <ion-col class="logo">
-        <img src="assets/images/wootubes-logo.png" />
-      </ion-col>
-    </ion-row>
-
-    <ion-row class="loginCnt">
-      <ion-list>
-        <ion-input class="inputEmail" type="text" placeholder="Full Name" formControlName="first_name" required>
-        </ion-input>
-      </ion-list>
-      <div *ngIf="first_name.hasError('required') && first_name.touched">
-        <h6>First Name is Required</h6>
-      </div>
-
-      <ion-list>
-        <ion-input class="inputEmail" type="text" placeholder="Phone No." formControlName="phone_no" required>
-        </ion-input>
-      </ion-list>
-      <div *ngIf="phone_no.hasError('required') && phone_no.touched">
-        <h6>Phone No is Required</h6>
-      </div>
-
-      <ion-list>
-        <ion-input class="inputEmail" type="text" placeholder="Email" formControlName="email"
-          pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required></ion-input>
-      </ion-list>
-      <div *ngIf="email.hasError('required') && email.touched">
-        <h6>Email is Requireds</h6>
-      </div>
-
-      <div class="md-errors-spacer" [hidden]="email.valid || email.untouched">
-        <div *ngIf="email.errors && email.errors.required">
-          <h6>Email is Required</h6>
-        </div>
-        <div *ngIf="email.errors && email.errors.pattern">
-          <h6> Email is invalid</h6>
-        </div>
-        <div *ngIf="email == pattern">
-          <h6> Email is invalid</h6>
-        </div>
-      </div>
-
-      <ion-list>
-        <ion-input class="inputEmail" type="password" placeholder="Password" formControlName="password" required>
-        </ion-input>
-      </ion-list>
-      <div *ngIf="password.hasError('required') && password.touched">
-        <h6>Password is Required</h6>
-      </div>
-
-      <ion-list>
-        <ion-input class="inputEmail" type="password" placeholder="Confirm Password" formControlName="confpassword"
-          required>
-        </ion-input>
-      </ion-list>
-      <div *ngIf="confpassword.hasError('required') && confpassword.touched">
-        <h6>Conf is Required</h6>
-      </div>
-
-    </ion-row>
-
-    <ion-row class="loginBottom">
-      <button ion-button class="btn_login" type="submit">Register
-        <img class="icon_arrow" src="assets/images/icon_arrow_white.png" />
-      </button>
-      <div class="newuser" (click)="singin()">
-        Already have an
-        <a href="#.">account?</a>
-      </div>
-    </ion-row>
-  </form>
-</ion-content> -->

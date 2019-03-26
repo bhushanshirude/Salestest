@@ -43,6 +43,10 @@ import { PopoverPage } from '../pages/popover_page/popover';
 import { MessagePage } from '../pages/Message_page/message';
 import { NotificationPage } from '../pages/Notification_page/notification';
 import { SearchPage } from '../pages/Search_page/search';
+import { ServiceProvider } from '../providers/service';
+// import { httpService } from 'httpservice'
+import { HttpModule } from '@angular/http';
+
 
 
 @NgModule({
@@ -88,6 +92,7 @@ import { SearchPage } from '../pages/Search_page/search';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
     SuperTabsModule.forRoot()
 
@@ -134,6 +139,8 @@ import { SearchPage } from '../pages/Search_page/search';
     WatchLaterPage
   ],
   providers: [
+    // httpService,
+    ServiceProvider,
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler }

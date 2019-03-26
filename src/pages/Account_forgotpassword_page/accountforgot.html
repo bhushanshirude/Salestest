@@ -1,5 +1,5 @@
 <ion-content class="loginWrap">
-  <form #Rehister="ngForm" (ngSubmit)="register()">
+  <form #forgotForm="ngForm" (ngSubmit)="send(forgotForm,$event)">
     <ion-row class="loginTop">
       <ion-col class="logo">
         <img src="assets/images/wootubes-logo.png" />
@@ -9,8 +9,17 @@
 
     <ion-row class="loginCnt">
       <ion-list>
-          <ion-input type="text" class="inputEmail" placeholder="Email"></ion-input>
+        <ion-input class="inputEmail" type="email" placeholder="Email" name="Email" ngModel #email="ngModel"
+          pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" required>
+        </ion-input>
       </ion-list>
+
+      <div *ngIf="forgotForm.submitted && email.errors && email.errors.required">
+        <h6>Email is Required</h6>
+      </div>
+      <div *ngIf="forgotForm.submitted && email.errors && email.errors.pattern">
+        <h6>Enter Valid Email id</h6>
+      </div>
     </ion-row>
 
     <ion-row class="loginBottom">
