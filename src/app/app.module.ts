@@ -44,7 +44,6 @@ import { MessagePage } from '../pages/Message_page/message';
 import { NotificationPage } from '../pages/Notification_page/notification';
 import { SearchPage } from '../pages/Search_page/search';
 import { ServiceProvider } from '../providers/service';
-// import { httpService } from 'httpservice'
 import { HttpModule } from '@angular/http';
 
 
@@ -139,7 +138,6 @@ import { HttpModule } from '@angular/http';
     WatchLaterPage
   ],
   providers: [
-    // httpService,
     ServiceProvider,
     StatusBar,
     SplashScreen,
