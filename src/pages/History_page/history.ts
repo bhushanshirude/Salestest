@@ -36,7 +36,6 @@ export class HistoryPage {
       //   for (let i = 0; i <= data.Object.data; i++) {
       //   }
       // } else if (data.Object.success == false) {
-
       // }
     })
   }
@@ -56,7 +55,6 @@ export class HistoryPage {
       //   for (let i = 0; i <= data.Object.data; i++) {
       //   }
       // } else if (data.Object.success == false) {
-
       // }
     })
   }
@@ -65,7 +63,6 @@ export class HistoryPage {
     fetch(this.Api_url + 'terms', {
       method: 'POST',
       body: JSON.stringify({
-
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8"
@@ -76,7 +73,6 @@ export class HistoryPage {
       //   for (let i = 0; i <= data.Object.data; i++) {
       //   }
       // } else if (data.Object.success == false) {
-
       // }
     })
   }
@@ -85,7 +81,6 @@ export class HistoryPage {
     fetch(this.Api_url + 'help', {
       method: 'POST',
       body: JSON.stringify({
-
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8"
@@ -96,7 +91,6 @@ export class HistoryPage {
       //   for (let i = 0; i <= data.Object.data; i++) {
       //   }
       // } else if (data.Object.success == false) {
-
       // }
     })
   }
