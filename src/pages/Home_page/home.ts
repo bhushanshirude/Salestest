@@ -67,7 +67,25 @@ export class HomePage {
   }
 
   seen() {
-    this.appCtrl.getRootNavs()[0].push(VideoDetailsPage);
+    fetch(this.Api_url + 'single_video', {
+      method: 'POST',
+      body: JSON.stringify({
+        "video_tape_id": "1",
+        "exists": "1"
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8"
+      }
+    }).then(response => response.json()).then(data => {
+      this.appCtrl.getRootNavs()[0].push(VideoDetailsPage);
+      console.log("data1", data)
+      // if (data.Object.success == true) {
+      //   for (let i = 0; i <= data.Object.data; i++) {
+      //   }
+      // } else if (data.Object.success == false) {
+
+      // }
+    })
   }
 
   presentPopover(myEvent) {
