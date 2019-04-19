@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-3 class="left">
+          Today
+        </ion-col>
+        <ion-col col-6 class="center">
+          Customer
+        </ion-col>
+        <ion-col col-3 class="right">
+          Filter
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-row>
+      <ion-col col-8 class="centers">
+        15 Active Customer
+      </ion-col>
+      <ion-col col-2>
+        <ion-icon ios="ios-pin" md="md-pin"></ion-icon>
+      </ion-col>
+      <ion-col col-2 (click)="open()">
+        <ion-icon ios="ios-add-circle" md="md-add-circle"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let data of records">
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/images/vidoe_img.png">
+      </ion-avatar>
+      <h5>{{data.title}}</h5>
+      <h6>{{data.Subtitle}}</h6>
+      <p>{{data.location}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

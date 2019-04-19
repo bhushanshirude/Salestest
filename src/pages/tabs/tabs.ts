@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { HomePage } from '../home_page/home';
-import { TrendingPage } from '../Trending_page/trending';
-import { SubscriptionPage } from '../Subscription_page/subscription';
-import { BlogPage } from '../blog_page/blog';
-import { LibraryPage } from '../library_page/library';
+import { HomePage } from '../Customer_page/home';
+import { TrendingPage } from '../Salesmem_page/trending';
+import { SubscriptionPage } from '../Route_page/subscription';
+import { BlogPage } from '../order_page/blog';
+import { LibraryPage } from '../More_page/library';
 
 
 

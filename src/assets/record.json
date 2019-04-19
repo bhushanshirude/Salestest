@@ -1,0 +1,42 @@
+[
+    {
+        "title": "ABC1",
+        "location": "Mumbai",
+        "Subtitle": "12222222222222"
+    },
+    {
+        "title": "DEF2",
+        "location": "Pune",
+        "Subtitle": "12222222222222"
+    },
+    {
+        "title": "ABC3",
+        "location": "Nashik",
+        "Subtitle": "12222222222222"
+    },
+    {
+        "title": "ABC4",
+        "location": "Kalyan",
+        "Subtitle": "12222222222222"
+    },
+    {
+        "title": "ABC5",
+        "location": "Thane",
+        "Subtitle": "12222222222222"
+    },
+    {
+        "title": "ABC6",
+        "location": "Manmad",
+        "Subtitle": "12222222222222"
+    },
+    {
+        "title": "ABC7",
+        "location": "Sangli",
+        "Subtitle": "12222222222222"
+    },
+    {
+        "title": "ABC8",
+        "location": "Aundh",
+        "Subtitle": "12222222222222"
+    }
+]
