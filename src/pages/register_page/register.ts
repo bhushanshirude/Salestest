@@ -24,15 +24,9 @@ export class RegisterPage {
       let signupData = {
         personalDetails: form.value
       }
-      console.log("RRRRRRRRRRRRRRRRRRRRRR", signupData.personalDetails)
-      this.navCtrl.push(HomePage,{
+      this.navCtrl.setRoot(HomePage,{
         data:signupData.personalDetails
       })
-      //   let headers = new Headers();
-      //   headers.append('Content-Type', 'application/json');
-      //   return this.http.post('assets/record.json', signupData.personalDetails, {
-      //   })
-      //     .map(res => res.json())
     }
   }
 }

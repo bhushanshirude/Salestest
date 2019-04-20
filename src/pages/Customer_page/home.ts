@@ -29,7 +29,6 @@ export class HomePage {
         employes = employes.json();
         for (let i = 0; i <= employes.length; i++) {
           this.records = employes;
-          console.log("this.data", this.data)
         }
         if (this.data) {
           this.records.push(this.data);
