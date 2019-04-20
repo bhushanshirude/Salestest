@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular/navigation/nav-controller';
+import { HomePage } from '../Customer_page/home';
 // import { NavController, NavParams } from 'ionic-angular';
 // import { TabsPage } from '../tabs/tabs';
 // import { Http } from '@angular/http';
@@ -9,7 +11,7 @@ import { Component } from '@angular/core';
 })
 
 export class RegisterPage {
-  constructor() {
+  constructor(public navCtrl: NavController) {
   }
 
 
@@ -23,6 +25,9 @@ export class RegisterPage {
         personalDetails: form.value
       }
       console.log("RRRRRRRRRRRRRRRRRRRRRR", signupData.personalDetails)
+      this.navCtrl.push(HomePage,{
+        data:signupData.personalDetails
+      })
       //   let headers = new Headers();
       //   headers.append('Content-Type', 'application/json');
       //   return this.http.post('assets/record.json', signupData.personalDetails, {

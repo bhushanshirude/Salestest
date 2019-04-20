@@ -4,6 +4,7 @@ import { ServiceProvider } from '../../providers/service';
 import { RegisterPage } from '../register_page/register';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
+import { NavParams } from 'ionic-angular/navigation/nav-params';
 
 @Component({
   selector: 'page-home',
@@ -11,8 +12,10 @@ import 'rxjs/add/operator/map';
 })
 
 export class HomePage {
-  records;
-  constructor(public navCtrl: NavController, public service: ServiceProvider, public appCtrl: App, private http: Http) {
+  records: any;
+  data;
+  constructor(public navCtrl: NavController, public navparms: NavParams, public service: ServiceProvider, public appCtrl: App, private http: Http) {
+    this.data = navparms.get('data');
     this.get();
   }
 
@@ -26,6 +29,10 @@ export class HomePage {
         employes = employes.json();
         for (let i = 0; i <= employes.length; i++) {
           this.records = employes;
+          console.log("this.data", this.data)
+        }
+        if (this.data) {
+          this.records.push(this.data);
         }
       }
     );
